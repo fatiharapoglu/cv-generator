@@ -18,6 +18,17 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "rules": {
+      "no-console": "off",
+      "quotes": [
+          "error",
+          "double"
+      ],
+      "indent": ["error", 4],
+      "prefer-destructuring": "off",
+      "no-plusplus": "off",
+      "max-len": ["error", { "code": 120 }]
+  },
     "extends": [
       "react-app",
       "react-app/jest"
