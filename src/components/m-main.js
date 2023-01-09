@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Education from "./c-education";
 import Experience from "./c-experience";
 import General from "./c-general";
+import Preview from "./c-preview";
 
 class Main extends Component {
     render() {
@@ -11,6 +12,7 @@ class Main extends Component {
                     <General />
                     <Experience />
                     <Education />
+                    <Preview />
                 </div>
                 <div className="preview" />
             </div>

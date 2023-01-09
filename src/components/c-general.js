@@ -11,7 +11,6 @@ class General extends Component {
                     <input placeholder="Adress" />
                     <input placeholder="Phone Number" />
                     <input placeholder="E-mail" />
-                    <button type="submit">Submit</button>
                 </form>
             </div>
         );

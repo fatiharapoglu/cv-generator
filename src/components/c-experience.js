@@ -11,7 +11,6 @@ class Experience extends Component {
                     <input placeholder="City" />
                     <input placeholder="From (year)" />
                     <input placeholder="To (year)" />
-                    <button type="submit">Submit</button>
                 </form>
             </div>
         );
