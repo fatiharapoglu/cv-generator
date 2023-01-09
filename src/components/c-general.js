@@ -1,25 +1,21 @@
 import React, { Component } from "react";
 
-class GeneralInfo extends Component {
-    constructor(props) {
-        super(props)
-    }
-
+class General extends Component {
     render() {
         return (
             <div>
                 <form>
                     <h1>General Information</h1>
-                    <input placeholder="First Name"></input>
-                    <input placeholder="Last Name"></input>
-                    <input placeholder="Adress"></input>
-                    <input placeholder="Phone Number"></input>
-                    <input placeholder="E-mail"></input>
+                    <input placeholder="First Name" />
+                    <input placeholder="Last Name" />
+                    <input placeholder="Adress" />
+                    <input placeholder="Phone Number" />
+                    <input placeholder="E-mail" />
                     <button type="submit">Submit</button>
                 </form>
             </div>
-        )
+        );
     }
 }
 
-export default GeneralInfo;
+export default General;

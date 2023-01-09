@@ -21,14 +21,22 @@
     "rules": {
       "no-console": "off",
       "quotes": [
-          "error",
-          "double"
+        "error",
+        "double"
       ],
-      "indent": ["error", 4],
+      "indent": [
+        "error",
+        4
+      ],
       "prefer-destructuring": "off",
       "no-plusplus": "off",
-      "max-len": ["error", { "code": 120 }]
-  },
+      "max-len": [
+        "error",
+        {
+          "code": 120
+        }
+      ]
+    },
     "extends": [
       "react-app",
       "react-app/jest"
@@ -45,5 +53,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }

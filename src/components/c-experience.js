@@ -1,25 +1,21 @@
 import React, { Component } from "react";
 
-class ExperienceInfo extends Component {
-    constructor(props) {
-        super(props)
-    }
-
+class Experience extends Component {
     render() {
         return (
             <div>
                 <form>
                     <h1>Experience Information</h1>
-                    <input placeholder="Position"></input>
-                    <input placeholder="Company"></input>
-                    <input placeholder="City"></input>
-                    <input placeholder="From (year)"></input>
-                    <input placeholder="To (year)"></input>
+                    <input placeholder="Position" />
+                    <input placeholder="Company" />
+                    <input placeholder="City" />
+                    <input placeholder="From (year)" />
+                    <input placeholder="To (year)" />
                     <button type="submit">Submit</button>
                 </form>
             </div>
-        )
+        );
     }
 }
 
-export default ExperienceInfo;
+export default Experience;
