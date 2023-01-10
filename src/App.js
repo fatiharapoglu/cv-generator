@@ -1,16 +1,9 @@
-import React, { Component } from "react";
-import Main from "./components/m-main";
+import React from "react"
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                {/* <Header/> */}
-                <Main />
-                {/* <Footer/> */}
-            </div>
-        );
-    }
+function App() {
+    return (
+        <div>App</div>
+    )
 }
 
 export default App;
