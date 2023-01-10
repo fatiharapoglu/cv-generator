@@ -1,8 +1,9 @@
 import React from "react"
+import Main from "./components/m-main";
 
 function App() {
     return (
-        <div>App</div>
+        <Main />
     )
 }
 
