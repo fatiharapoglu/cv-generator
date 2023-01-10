@@ -1,2 +1,2 @@
 # cv-generator
-react
+react app
