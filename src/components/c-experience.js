@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Experience = () => {
+const Experience = (props) => {
     const [position, setPosition] = useState("");
     const [company, setCompany] = useState("");
     const [city, setCity] = useState("");
@@ -26,6 +26,7 @@ const Experience = () => {
     return (
         <div>
             <form>
+                <h1>Experience</h1>
                 <input type="text" value={position} onChange={handlePosition} placeholder="Position" />
                 <input type="text" value={company} onChange={handleCompany} placeholder="Company" />
                 <input type="text" value={city} onChange={handleCity} placeholder="City" />

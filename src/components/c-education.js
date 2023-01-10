@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-const Education = () => {
+const Education = (props) => {
     const [uni, setUni] = useState("");
     const [city, setCity] = useState("");
     const [degree, setDegree] = useState("");
@@ -30,6 +30,7 @@ const Education = () => {
     return (
         <div>
             <form>
+                <h1>Education</h1>
                 <input type="text" value={uni} onChange={handleUniChange} placeholder="University" />
                 <input type="text" value={city} onChange={handleCityChange} placeholder="City" />
                 <input type="text" value={degree} onChange={handleDegreeChange} placeholder="Degree" />
