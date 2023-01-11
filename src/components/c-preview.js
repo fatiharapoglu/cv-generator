@@ -2,7 +2,7 @@ import React from "react";
 
 const Preview = (props) => {
     return (
-        <div>
+        <div className="preview">
             <div>
                 <header>
                     <h1>{props.general.name}</h1>

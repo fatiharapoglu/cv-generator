@@ -5,16 +5,10 @@ import General from "./c-general";
 
 const Form = (props) => {
     return (
-        <div>
+        <div className="form">
             <General data={props.general} handler={props.handleGeneralChange} />
-            <Experience
-                data={props.experience}
-                handler={props.handleExperienceChange}
-            />
-            <Education
-                data={props.education}
-                handler={props.handleEducationChange}
-            />
+            <Experience data={props.experience} handler={props.handleExperienceChange} />
+            <Education data={props.education} handler={props.handleEducationChange} />
         </div>
     );
 };

@@ -49,7 +49,7 @@ const Main = () => {
     };
 
     return (
-        <div>
+        <div className="container">
             <Form
                 general={general}
                 experience={experience}
@@ -58,11 +58,7 @@ const Main = () => {
                 handleExperienceChange={handleExperienceChange}
                 handleEducationChange={handleEducationChange}
             />
-            <Preview
-                general={general}
-                experience={experience}
-                education={education}
-            />
+            <Preview general={general} experience={experience} education={education} />
         </div>
     );
 };
