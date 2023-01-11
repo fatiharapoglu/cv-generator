@@ -15,12 +15,10 @@ const Preview = (props) => {
                     <h2>Education</h2>
                     <ul>
                         <li>
-                            <h3>Degree, Field of Study - University Name</h3>
-                            <p>Graduation Date</p>
-                        </li>
-                        <li>
-                            <h3>Degree, Field of Study - University Name</h3>
-                            <p>Graduation Date</p>
+                            <h3>{props.education.uni}</h3>
+                            <p>
+                                {props.education.eduFromDate} - {props.education.eduToDate}
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -28,20 +26,8 @@ const Preview = (props) => {
                     <h2>Experience</h2>
                     <ul>
                         <li>
-                            <h3>Job Title - Company Name</h3>
-                            <p>Job duration</p>
-                            <ul>
-                                <li>Job responsibility 1</li>
-                                <li>Job responsibility 2</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>Job Title - Company Name</h3>
-                            <p>Job duration</p>
-                            <ul>
-                                <li>Job responsibility 1</li>
-                                <li>Job responsibility 2</li>
-                            </ul>
+                            <h3>{props.experience.title}</h3>
+                            <p>{props.experience.position}</p>
                         </li>
                     </ul>
                 </div>

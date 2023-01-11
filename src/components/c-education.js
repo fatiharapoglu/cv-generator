@@ -7,10 +7,10 @@ const Education = (props) => {
                 <h1>Education</h1>
                 <input
                     type="text"
-                    value={props.data.eduUni}
+                    value={props.data.uni}
                     onChange={props.handler}
                     placeholder="University"
-                    id="eduUni"
+                    id="uni"
                 />
                 <input
                     type="text"
