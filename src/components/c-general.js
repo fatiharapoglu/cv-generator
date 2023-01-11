@@ -2,14 +2,14 @@ import React from "react";
 
 const General = (props) => {
     return (
-        <div>
+        <div className="flex-container">
             <form>
                 <h1>General Information</h1>
                 <input
                     type="text"
                     value={props.data.name}
                     onChange={props.handler}
-                    placeholder="Name"
+                    placeholder="First Name"
                     id="name"
                 />
                 <input

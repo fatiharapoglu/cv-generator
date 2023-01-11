@@ -1,8 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Experience = (props) => {
+    const [isExpPlusClicked, setIsExpPlusClicked] = useState(false);
+
+    const plusHtml = (
+        <>
+            <h1>Experience</h1>
+            <input
+                type="text"
+                value={props.dataPlus.positionPlus}
+                onChange={props.handlerPlus}
+                placeholder="Position"
+                id="positionPlus"
+            />
+            <input
+                type="text"
+                value={props.dataPlus.companyPlus}
+                onChange={props.handlerPlus}
+                placeholder="Company"
+                id="companyPlus"
+            />
+            <input
+                type="text"
+                value={props.dataPlus.expCityPlus}
+                onChange={props.handlerPlus}
+                placeholder="City"
+                id="expCityPlus"
+            />
+            <input
+                type="text"
+                value={props.dataPlus.expFromDatePlus}
+                onChange={props.handlerPlus}
+                placeholder="From (Year)"
+                id="expFromDatePlus"
+            />
+            <input
+                type="text"
+                value={props.dataPlus.expToDatePlus}
+                onChange={props.handlerPlus}
+                placeholder="To (Year)"
+                id="expToDatePlus"
+            />
+        </>
+    );
+
+    const plusExperience = () => {
+        setIsExpPlusClicked(true);
+    };
     return (
-        <div>
+        <div className="flex-container">
             <form>
                 <h1>Experience</h1>
                 <input
@@ -40,7 +86,13 @@ const Experience = (props) => {
                     placeholder="To (Year)"
                     id="expToDate"
                 />
+                {isExpPlusClicked && plusHtml}
             </form>
+            {!isExpPlusClicked && (
+                <button onClick={plusExperience} className="btn">
+                    Add New Experience Info
+                </button>
+            )}
         </div>
     );
 };

@@ -1,8 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Education = (props) => {
+    const [isEduPlusClicked, setIsEduPlusClicked] = useState(false);
+
+    const plusHtml = (
+        <>
+            <h1>Education</h1>
+            <input
+                type="text"
+                value={props.dataPlus.uniPlus}
+                onChange={props.handlerPlus}
+                placeholder="University"
+                id="uniPlus"
+            />
+            <input
+                type="text"
+                value={props.dataPlus.eduCityPlus}
+                onChange={props.handlerPlus}
+                placeholder="City"
+                id="eduCityPlus"
+            />
+            <input
+                type="text"
+                value={props.dataPlus.degreePlus}
+                onChange={props.handlerPlus}
+                placeholder="Degree"
+                id="degreePlus"
+            />
+            <input
+                type="text"
+                value={props.dataPlus.subjectPlus}
+                onChange={props.handlerPlus}
+                placeholder="Subject"
+                id="subjectPlus"
+            />
+            <input
+                type="text"
+                value={props.dataPlus.eduFromDatePlus}
+                onChange={props.handlerPlus}
+                placeholder="From (Year)"
+                id="eduFromDatePlus"
+            />
+            <input
+                type="text"
+                value={props.dataPlus.eduToDatePlus}
+                onChange={props.handlerPlus}
+                placeholder="To (Year)"
+                id="eduToDatePlus"
+            />
+        </>
+    );
+
+    const plusEducation = () => {
+        setIsEduPlusClicked(true);
+    };
+
     return (
-        <div>
+        <div className="flex-container">
             <form>
                 <h1>Education</h1>
                 <input
@@ -47,7 +101,13 @@ const Education = (props) => {
                     placeholder="To (Year)"
                     id="eduToDate"
                 />
+                {isEduPlusClicked && plusHtml}
             </form>
+            {!isEduPlusClicked && (
+                <button onClick={plusEducation} className="btn">
+                    Add New Education Info
+                </button>
+            )}
         </div>
     );
 };

@@ -4,7 +4,7 @@
     --background-primary: rgb(27, 27, 27);
     --primary: rgb(197, 192, 192);
     --secondary: rgb(129, 129, 129);
-    --third: rgb(26, 26, 26);
+    --third: rgb(19, 19, 19);
     --font-1: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     --font-2: Verdana, Geneva, Tahoma, sans-serif;
     --border: 1px dashed rgb(58, 58, 58);
@@ -34,6 +34,13 @@ body {
     background-color: var(--background-primary);
 }
 
+.btn {
+    background: none;
+    border: var(--border);
+    padding: 10px;
+    width: 50%;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -59,6 +66,7 @@ body {
 
 .form input {
     background-color: var(--secondary);
+    color: var(--third);
     border: var(--border);
     border-radius: 5px;
     padding: 10px;
@@ -73,8 +81,62 @@ body {
     text-shadow: 1px 1px 1px 1px black;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .form h1 {
     text-align: center;
     padding: 10px;
     margin: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--third);
+    height: 10vh;
+}
+
+.header h1 {
+    font-family: var(--font-2);
+    font-size: 2rem;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 7.5vh;
+    background-color: var(--third);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.github-icon {
+    height: 25px;
+    padding-left: 10px;
+    padding: 0 10px;
+    transition: transform 1s ease-in-out;
+}
+
+.github-icon:hover {
+    transform: rotate(360deg);
+}
+
+.footer a {
+    color: var(--secondary);
+}
+
+.footer a:hover {
+    color: var(--primary);
 }
