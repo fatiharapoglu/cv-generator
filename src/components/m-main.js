@@ -47,6 +47,17 @@ const Main = () => {
         eduToDatePlus: "",
     });
 
+    const [skills, setSkills] = useState({
+        skill1: "",
+        skill2: "",
+        skill3: "",
+        skill4: "",
+        skill5: "",
+        skill6: "",
+        skill7: "",
+        skill8: "",
+    });
+
     const handleGeneralChange = (e) => {
         const target = e.target.id;
         const value = e.target.value;
@@ -77,6 +88,12 @@ const Main = () => {
         setEducationPlus({ ...educationPlus, [target]: value });
     };
 
+    const handleSkillsChange = (e) => {
+        const target = e.target.id;
+        const value = e.target.value;
+        setSkills({ ...skills, [target]: value });
+    };
+
     return (
         <div className="container">
             <Form
@@ -85,11 +102,13 @@ const Main = () => {
                 education={education}
                 experiencePlus={experiencePlus}
                 educationPlus={educationPlus}
+                skills={skills}
                 handleGeneralChange={handleGeneralChange}
                 handleExperienceChange={handleExperienceChange}
                 handleEducationChange={handleEducationChange}
                 handleExperiencePlusChange={handleExperiencePlusChange}
                 handleEducationPlusChange={handleEducationPlusChange}
+                handleSkillsChange={handleSkillsChange}
             />
             <Preview general={general} experience={experience} education={education} />
         </div>

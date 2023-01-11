@@ -5,7 +5,7 @@ const Experience = (props) => {
 
     const plusHtml = (
         <>
-            <h1>Experience</h1>
+            <h1>Experience #2</h1>
             <input
                 type="text"
                 value={props.dataPlus.positionPlus}
@@ -47,10 +47,11 @@ const Experience = (props) => {
     const plusExperience = () => {
         setIsExpPlusClicked(true);
     };
+
     return (
         <div className="flex-container">
             <form>
-                <h1>Experience</h1>
+                <h1>{isExpPlusClicked ? "Experience #1" : "Experience"}</h1>
                 <input
                     type="text"
                     value={props.data.position}

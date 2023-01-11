@@ -5,7 +5,7 @@ const Education = (props) => {
 
     const plusHtml = (
         <>
-            <h1>Education</h1>
+            <h1>Education #2</h1>
             <input
                 type="text"
                 value={props.dataPlus.uniPlus}
@@ -58,7 +58,7 @@ const Education = (props) => {
     return (
         <div className="flex-container">
             <form>
-                <h1>Education</h1>
+                <h1>{isEduPlusClicked ? "Education #1" : "Education"}</h1>
                 <input
                     type="text"
                     value={props.data.uni}

@@ -34,7 +34,7 @@ body {
     background-color: var(--background-primary);
 }
 
-.btn {
+.flex-container .btn {
     background: none;
     border: var(--border);
     padding: 10px;
