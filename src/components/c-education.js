@@ -1,45 +1,55 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const Education = (props) => {
-    const [uni, setUni] = useState("");
-    const [city, setCity] = useState("");
-    const [degree, setDegree] = useState("");
-    const [subject, setSubject] = useState("");
-    const [fromDate, setFromDate] = useState("");
-    const [toDate, setToDate] = useState("");
-
-    const handleUniChange = (e) => {
-        setUni(e.target.value);
-    }
-    const handleCityChange = (e) => {
-        setCity(e.target.value);
-    }
-    const handleDegreeChange = (e) => {
-        setDegree(e.target.value);
-    }
-    const handleSubjectChange = (e) => {
-        setSubject(e.target.value);
-    }
-    const handleFromDateChange = (e) => {
-        setFromDate(e.target.value);
-    }
-    const handleToDateChange = (e) => {
-        setToDate(e.target.value);
-    }
-
     return (
         <div>
             <form>
                 <h1>Education</h1>
-                <input type="text" value={uni} onChange={handleUniChange} placeholder="University" />
-                <input type="text" value={city} onChange={handleCityChange} placeholder="City" />
-                <input type="text" value={degree} onChange={handleDegreeChange} placeholder="Degree" />
-                <input type="text" value={subject} onChange={handleSubjectChange} placeholder="Subject" />
-                <input type="text" value={fromDate} onChange={handleFromDateChange} placeholder="From (Year)" />
-                <input type="text" value={toDate} onChange={handleToDateChange} placeholder="To (Year)" />
+                <input
+                    type="text"
+                    value={props.data.eduUni}
+                    onChange={props.handler}
+                    placeholder="University"
+                    id="eduUni"
+                />
+                <input
+                    type="text"
+                    value={props.data.eduCity}
+                    onChange={props.handler}
+                    placeholder="City"
+                    id="eduCity"
+                />
+                <input
+                    type="text"
+                    value={props.data.degree}
+                    onChange={props.handler}
+                    placeholder="Degree"
+                    id="degree"
+                />
+                <input
+                    type="text"
+                    value={props.data.subject}
+                    onChange={props.handler}
+                    placeholder="Subject"
+                    id="subject"
+                />
+                <input
+                    type="text"
+                    value={props.data.eduFromDate}
+                    onChange={props.handler}
+                    placeholder="From (Year)"
+                    id="eduFromDate"
+                />
+                <input
+                    type="text"
+                    value={props.data.eduToDate}
+                    onChange={props.handler}
+                    placeholder="To (Year)"
+                    id="eduToDate"
+                />
             </form>
         </div>
     );
-}
+};
 
 export default Education;
