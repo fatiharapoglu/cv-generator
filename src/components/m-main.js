@@ -10,6 +10,7 @@ const Main = () => {
         title: "",
         adress: "",
         phone: "",
+        web: "",
         email: "",
         desc: "",
         born: "",
@@ -63,6 +64,17 @@ const Main = () => {
         skill6: "",
         skill7: "",
         skill8: "",
+    });
+
+    const [hobbies, setHobbies] = useState({
+        hobby1: "",
+        hobby2: "",
+        hobby3: "",
+        hobby4: "",
+        hobby5: "",
+        hobby6: "",
+        hobby7: "",
+        hobby8: "",
     });
 
     const [image, setImage] = useState(null);
@@ -119,7 +131,15 @@ const Main = () => {
         setSkills({ ...skills, [target]: value });
     };
 
+    const handleHobbiesChange = (e) => {
+        const target = e.target.id;
+        const value = e.target.value;
+        setHobbies({ ...hobbies, [target]: value });
+    };
+
     const fillExample = () => {
+        setIsEduPlusClicked(true);
+        setIsExpPlusClicked(true);
         setGeneral({
             name: "Mocha",
             lastName: "Fettan",
@@ -127,6 +147,7 @@ const Main = () => {
             adress: "Sakarya / Türkiye",
             phone: "+90 539 000 54 54",
             email: "fettan@cat.com",
+            web: "meow?",
             desc: "I have long hair and gave birth to 3 child.",
             born: "2017",
             place: "Sakarya / Türkiye",
@@ -175,6 +196,16 @@ const Main = () => {
             skill7: "Running really fast",
             skill8: "Can live in streets",
         });
+        setHobbies({
+            hobby1: "Running",
+            hobby2: "Jumping",
+            hobby3: "Eating",
+            hobby4: "Sleeping",
+            hobby5: "Mother of 3 childs",
+            hobby6: "Playing",
+            hobby7: "Running really fast",
+            hobby8: "Can live in streets",
+        });
         setImage(mocha);
     };
 
@@ -189,6 +220,7 @@ const Main = () => {
                 isEduPlusClicked={isEduPlusClicked}
                 isExpPlusClicked={isExpPlusClicked}
                 skills={skills}
+                hobbies={hobbies}
                 handlePhotoChange={handlePhotoChange}
                 handleGeneralChange={handleGeneralChange}
                 handleExperienceChange={handleExperienceChange}
@@ -196,6 +228,7 @@ const Main = () => {
                 handleExperiencePlusChange={handleExperiencePlusChange}
                 handleEducationPlusChange={handleEducationPlusChange}
                 handleSkillsChange={handleSkillsChange}
+                handleHobbiesChange={handleHobbiesChange}
                 plusExperience={plusExperience}
                 plusEducation={plusEducation}
             />
@@ -206,7 +239,10 @@ const Main = () => {
                 educationPlus={educationPlus}
                 experiencePlus={experiencePlus}
                 skills={skills}
+                hobbies={hobbies}
                 image={image}
+                isEduPlusClicked={isEduPlusClicked}
+                isExpPlusClicked={isExpPlusClicked}
                 autofill={fillExample}
             />
         </div>

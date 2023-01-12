@@ -2,6 +2,7 @@ import React from "react";
 import Education from "./c-education";
 import Experience from "./c-experience";
 import General from "./c-general";
+import Hobbies from "./c-hobbies";
 import Photo from "./c-photo";
 import Skills from "./c-skills";
 
@@ -27,6 +28,7 @@ const Form = (props) => {
                 plusExperience={props.plusExperience}
             />
             <Skills data={props.skills} handler={props.handleSkillsChange} />
+            <Hobbies data={props.hobbies} handler={props.handleHobbiesChange} />
         </div>
     );
 };

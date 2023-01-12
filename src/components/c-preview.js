@@ -61,9 +61,34 @@ const Preview = (props) => {
                     <div className="preview-contact">
                         <h1>Contact Information</h1>
                         <ul>
-                            <li>{props.general.phone}</li>
-                            <li>{props.general.email}</li>
-                            <li>{props.general.adress}</li>
+                            {props.general.adress !== "" && (
+                                <li>
+                                    <span>Adress:</span>
+                                    <br />
+                                    {props.general.adress}
+                                </li>
+                            )}
+                            {props.general.phone !== "" && (
+                                <li>
+                                    <span>Phone:</span>
+                                    <br />
+                                    {props.general.phone}
+                                </li>
+                            )}
+                            {props.general.email !== "" && (
+                                <li>
+                                    <span>E-mail:</span>
+                                    <br />
+                                    {props.general.email}
+                                </li>
+                            )}
+                            {props.general.web !== "" && (
+                                <li>
+                                    <span>Web Site:</span>
+                                    <br />
+                                    {props.general.web}
+                                </li>
+                            )}
                         </ul>
                     </div>
                     <div className="preview-skills">
@@ -91,8 +116,59 @@ const Preview = (props) => {
                         {props.general.desc !== "" && <li>{props.general.desc}</li>}
                     </div>
                     <div className="preview-main">
-                        <div className="preview-experience"></div>
-                        <div className="preview-education"></div>
+                        <div className="preview-experience">
+                            <h1>EXPERIENCE</h1>
+                            <div className="preview-experience-1">
+                                {props.experience.position}
+                                {props.experience.company}
+                                {props.experience.expCity}
+                                {props.experience.expFromDate}
+                                {props.experience.expToDate}
+                            </div>
+                            {props.isExpPlusClicked && (
+                                <div className="preview-experience-2">
+                                    {props.experiencePlus.positionPlus}
+                                    {props.experiencePlus.companyPlus}
+                                    {props.experiencePlus.expCityPlus}
+                                    {props.experiencePlus.expFromDatePlus}
+                                    {props.experiencePlus.expToDatePlus}
+                                </div>
+                            )}
+                        </div>
+                        <div className="preview-education">
+                            <h1>EDUCATION</h1>
+                            <div className="preview-education-1">
+                                {props.education.uni}
+                                {props.education.eduCity}
+                                {props.education.degree}
+                                {props.education.subject}
+                                {props.education.eduFromDate}
+                                {props.education.eduToDate}
+                            </div>
+                            {props.isEduPlusClicked && (
+                                <div className="preview-education-2">
+                                    {props.educationPlus.uniPlus}
+                                    {props.educationPlus.eduCityPlus}
+                                    {props.educationPlus.degreePlus}
+                                    {props.educationPlus.subjectPlus}
+                                    {props.educationPlus.eduFromDatePlus}
+                                    {props.educationPlus.eduToDatePlus}
+                                </div>
+                            )}
+                        </div>
+                        <div className="preview-hobbies">
+                            <h1>SOCIAL ACTIVITIES</h1>
+                            <ul>
+                                {props.hobbies.hobby1 !== "" && <li>{props.hobbies.hobby1}</li>}
+                                {props.hobbies.hobby2 !== "" && <li>{props.hobbies.hobby2}</li>}
+                                {props.hobbies.hobby3 !== "" && <li>{props.hobbies.hobby3}</li>}
+                                {props.hobbies.hobby4 !== "" && <li>{props.hobbies.hobby4}</li>}
+                                {props.hobbies.hobby5 !== "" && <li>{props.hobbies.hobby5}</li>}
+                                {props.hobbies.hobby6 !== "" && <li>{props.hobbies.hobby6}</li>}
+                                {props.hobbies.hobby7 !== "" && <li>{props.hobbies.hobby7}</li>}
+                                {props.hobbies.hobby8 !== "" && <li>{props.hobbies.hobby8}</li>}
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <button className="btn" onClick={props.autofill}>

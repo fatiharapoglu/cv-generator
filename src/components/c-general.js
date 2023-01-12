@@ -91,6 +91,13 @@ const General = (props) => {
                 />
                 <input
                     type="text"
+                    value={props.data.web}
+                    onChange={props.handler}
+                    placeholder="Web site"
+                    id="web"
+                />
+                <input
+                    type="text"
                     value={props.data.desc}
                     onChange={props.handler}
                     placeholder="Description"
