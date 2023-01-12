@@ -11,6 +11,11 @@ const Main = () => {
         phone: "",
         email: "",
         desc: "",
+        born: "",
+        sex: "",
+        marital: "",
+        drive: "",
+        military: "",
     });
 
     const [experience, setExperience] = useState({
@@ -94,6 +99,58 @@ const Main = () => {
         setSkills({ ...skills, [target]: value });
     };
 
+    const fillExample = () => {
+        setGeneral({
+            name: "Mocha",
+            lastName: "Fettan",
+            title: "A Cat",
+            adress: "Sakarya / Türkiye",
+            phone: "+90 539 000 54 54",
+            email: "fettan@cat.com",
+            desc: "I have long hairs and gave birth to 3 child.",
+        });
+        setExperience({
+            position: "Creator of worlds",
+            company: "The Rogue Cats",
+            expCity: "Sakarya",
+            expFromDate: "2017",
+            expToDate: "Present",
+        });
+        setEducation({
+            uni: "",
+            eduCity: "",
+            degree: "",
+            subject: "",
+            eduFromDate: "",
+            eduToDate: "",
+        });
+        setExperiencePlus({
+            positionPlus: "",
+            companyPlus: "",
+            expCityPlus: "",
+            expFromDatePlus: "",
+            expToDatePlus: "",
+        });
+        setEducationPlus({
+            uniPlus: "",
+            eduCityPlus: "",
+            degreePlus: "",
+            subjectPlus: "",
+            eduFromDatePlus: "",
+            eduToDatePlus: "",
+        });
+        setSkills({
+            skill1: "",
+            skill2: "",
+            skill3: "",
+            skill4: "",
+            skill5: "",
+            skill6: "",
+            skill7: "",
+            skill8: "",
+        });
+    };
+
     return (
         <div className="container">
             <Form
@@ -110,7 +167,14 @@ const Main = () => {
                 handleEducationPlusChange={handleEducationPlusChange}
                 handleSkillsChange={handleSkillsChange}
             />
-            <Preview general={general} experience={experience} education={education} />
+            <Preview
+                general={general}
+                experience={experience}
+                education={education}
+                educationPlus={educationPlus}
+                experiencePlus={experiencePlus}
+                skills={skills}
+            />
         </div>
     );
 };

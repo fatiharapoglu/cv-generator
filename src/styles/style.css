@@ -1,13 +1,16 @@
 @import-normalize;
 
 :root {
-    --background-primary: rgb(27, 27, 27);
-    --primary: rgb(197, 192, 192);
-    --secondary: rgb(129, 129, 129);
-    --third: rgb(19, 19, 19);
+    --background-primary: rgb(20 20 20);
+    --primary: rgb(255 255 255);
+    --secondary: rgb(36 36 36);
+    --third: rgb(166 166 166);
     --font-1: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     --font-2: Verdana, Geneva, Tahoma, sans-serif;
     --border: 1px dashed rgb(58, 58, 58);
+    --preview-color-1: rgb(34, 34, 34);
+    --preview-color-2: rgb(209, 209, 209);
+    --preview-color-3: rgb(107, 0, 0);
 }
 
 * {
@@ -16,7 +19,7 @@
     box-sizing: border-box;
     color: var(--primary);
     font-family: var(--font-1);
-    font-size: 1rem;
+    font-size: 0.85rem;
 }
 
 ul,
@@ -38,13 +41,18 @@ body {
     background: none;
     border: var(--border);
     padding: 10px;
-    width: 50%;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.flex-container .btn:hover {
+    scale: 1.025;
+    color: var(--secondary);
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .form {
@@ -58,21 +66,52 @@ body {
 
 .preview {
     width: 50%;
+    position: relative;
+    margin: 40px 0;
+}
+
+.preview .fixed {
+    position: fixed;
+    border: var(--border);
+    width: 585px;
+    aspect-ratio: 0.7;
+    padding: 7px;
     display: flex;
-    justify-content: center;
+}
+
+.left-preview {
+    flex: 1;
+    height: 100%;
+    background-color: var(--preview-color-1);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 10px;
+}
+
+.right-preview {
+    flex: 2.5;
+    height: 100%;
+    background-color: var(--preview-color-2);
+}
+
+.preview-photo {
+    width: 90%;
+    border: var(--border);
+    aspect-ratio: 1;
+    margin-top: 5px;
+}
+
+.preview-contact {
 }
 
 .form input {
     background-color: var(--secondary);
     color: var(--third);
     border: var(--border);
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
+    padding: 7px;
+    margin: 7px;
     display: flex;
-    width: 30vw;
+    width: 35vw;
     min-width: 300px;
 }
 
@@ -88,24 +127,8 @@ body {
 }
 
 .form h1 {
-    text-align: center;
-    padding: 10px;
+    padding: 10px 0;
     margin: 10px;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    background-color: var(--third);
-    height: 10vh;
-}
-
-.header h1 {
-    font-family: var(--font-2);
-    font-size: 2rem;
 }
 
 .footer {
@@ -113,8 +136,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 7.5vh;
-    background-color: var(--third);
+    height: 5vh;
 }
 
 .about {

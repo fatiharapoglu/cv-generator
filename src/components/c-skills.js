@@ -9,8 +9,8 @@ const Skills = (props) => {
 
     return (
         <div className="flex-container">
-            <h1>Skills</h1>
             <ul>
+                <h1>Skills</h1>
                 <li>
                     <input
                         type="text"
