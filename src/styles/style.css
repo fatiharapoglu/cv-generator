@@ -37,7 +37,7 @@ body {
     background-color: var(--background-primary);
 }
 
-.flex-container .btn {
+.btn {
     background: none;
     border: var(--border);
     padding: 10px;
@@ -45,7 +45,7 @@ body {
     transition: all 0.1s ease-in-out;
 }
 
-.flex-container .btn:hover {
+.btn:hover {
     scale: 1.025;
     color: var(--secondary);
 }
@@ -101,7 +101,20 @@ body {
     margin-top: 5px;
 }
 
+.preview-photo img {
+    width: 100%;
+    height: 100%;
+}
+
 .preview-contact {
+}
+
+.preview .btn {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
 }
 
 .form input {
@@ -132,10 +145,8 @@ body {
 }
 
 .footer {
-    position: relative;
     display: flex;
     justify-content: center;
-    width: 100%;
     height: 5vh;
 }
 

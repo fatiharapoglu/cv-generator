@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Form from "./c-form";
 import Preview from "./c-preview";
+import mocha from "../assets/mocha.jpg";
 
 const Main = () => {
     const [general, setGeneral] = useState({
@@ -63,6 +64,12 @@ const Main = () => {
         skill8: "",
     });
 
+    const [image, setImage] = useState(null);
+
+    const handlePhotoChange = (e) => {
+        setImage(e.target.files[0]);
+    };
+
     const handleGeneralChange = (e) => {
         const target = e.target.id;
         const value = e.target.value;
@@ -108,6 +115,11 @@ const Main = () => {
             phone: "+90 539 000 54 54",
             email: "fettan@cat.com",
             desc: "I have long hairs and gave birth to 3 child.",
+            born: "2017",
+            sex: "Female",
+            marital: "Single",
+            drive: "Nope",
+            military: "None",
         });
         setExperience({
             position: "Creator of worlds",
@@ -117,38 +129,39 @@ const Main = () => {
             expToDate: "Present",
         });
         setEducation({
-            uni: "",
-            eduCity: "",
-            degree: "",
-            subject: "",
-            eduFromDate: "",
-            eduToDate: "",
+            uni: "Self Taught",
+            eduCity: "Eskişehir",
+            degree: "Bachelor's Degree",
+            subject: "Cats",
+            eduFromDate: "2017",
+            eduToDate: "2023",
         });
         setExperiencePlus({
-            positionPlus: "",
-            companyPlus: "",
-            expCityPlus: "",
-            expFromDatePlus: "",
-            expToDatePlus: "",
+            positionPlus: "None",
+            companyPlus: "None",
+            expCityPlus: "None",
+            expFromDatePlus: "None",
+            expToDatePlus: "None",
         });
         setEducationPlus({
-            uniPlus: "",
-            eduCityPlus: "",
-            degreePlus: "",
-            subjectPlus: "",
-            eduFromDatePlus: "",
-            eduToDatePlus: "",
+            uniPlus: "None",
+            eduCityPlus: "None",
+            degreePlus: "None",
+            subjectPlus: "None",
+            eduFromDatePlus: "None",
+            eduToDatePlus: "None",
         });
         setSkills({
-            skill1: "",
-            skill2: "",
-            skill3: "",
-            skill4: "",
-            skill5: "",
-            skill6: "",
-            skill7: "",
-            skill8: "",
+            skill1: "Running",
+            skill2: "Jumping",
+            skill3: "Eating",
+            skill4: "Sleeping",
+            skill5: "Mother of 3 childs",
+            skill6: "Playing",
+            skill7: "Running really fast",
+            skill8: "Can live in streets",
         });
+        setImage(mocha);
     };
 
     return (
@@ -160,6 +173,7 @@ const Main = () => {
                 experiencePlus={experiencePlus}
                 educationPlus={educationPlus}
                 skills={skills}
+                handlePhotoChange={handlePhotoChange}
                 handleGeneralChange={handleGeneralChange}
                 handleExperienceChange={handleExperienceChange}
                 handleEducationChange={handleEducationChange}
@@ -174,6 +188,8 @@ const Main = () => {
                 educationPlus={educationPlus}
                 experiencePlus={experiencePlus}
                 skills={skills}
+                image={image}
+                autofill={fillExample}
             />
         </div>
     );

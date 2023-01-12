@@ -6,7 +6,10 @@ const Preview = (props) => {
             <div className="fixed">
                 <div className="left-preview">
                     <div className="preview-photo">
-                        <img src="#" alt="preview" />
+                        {typeof props.image === "object" && props.image && (
+                            <img src={URL.createObjectURL(props.image)} alt="preview" />
+                        )}
+                        {typeof props.image === "string" && <img src={props.image} alt="preview" />}
                     </div>
                     <div className="preview-general"></div>
                     <div className="preview-contact">
@@ -25,6 +28,9 @@ const Preview = (props) => {
                         <div className="preview-education"></div>
                     </div>
                 </div>
+                <button className="btn" onClick={props.autofill}>
+                    Autofill for preview
+                </button>
             </div>
         </div>
     );

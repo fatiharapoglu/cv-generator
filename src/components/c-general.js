@@ -9,15 +9,50 @@ const General = (props) => {
                     type="text"
                     value={props.data.name}
                     onChange={props.handler}
-                    placeholder="First Name"
+                    placeholder="First name"
                     id="name"
                 />
                 <input
                     type="text"
                     value={props.data.lastName}
                     onChange={props.handler}
-                    placeholder="Last Name"
+                    placeholder="Last name"
                     id="lastName"
+                />
+                <input
+                    type="text"
+                    value={props.data.born}
+                    onChange={props.handler}
+                    placeholder="Date of birth"
+                    id="born"
+                />
+                <input
+                    type="text"
+                    value={props.data.sex}
+                    onChange={props.handler}
+                    placeholder="Sex"
+                    id="sex"
+                />
+                <input
+                    type="text"
+                    value={props.data.marital}
+                    onChange={props.handler}
+                    placeholder="Marital status"
+                    id="marital"
+                />
+                <input
+                    type="text"
+                    value={props.data.drive}
+                    onChange={props.handler}
+                    placeholder="Driving licence"
+                    id="drive"
+                />
+                <input
+                    type="text"
+                    value={props.data.military}
+                    onChange={props.handler}
+                    placeholder="Military service"
+                    id="military"
                 />
                 <input
                     type="text"
