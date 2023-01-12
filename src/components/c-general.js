@@ -28,6 +28,13 @@ const General = (props) => {
                 />
                 <input
                     type="text"
+                    value={props.data.place}
+                    onChange={props.handler}
+                    placeholder="Place of birth"
+                    id="place"
+                />
+                <input
+                    type="text"
                     value={props.data.sex}
                     onChange={props.handler}
                     placeholder="Sex"

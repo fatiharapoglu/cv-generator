@@ -89,24 +89,38 @@ body {
 }
 
 .right-preview {
-    flex: 2.5;
+    flex: 2;
     height: 100%;
     background-color: var(--preview-color-2);
 }
 
 .preview-photo {
-    width: 90%;
-    border: var(--border);
+    width: 80%;
     aspect-ratio: 1;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 .preview-photo img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
+}
+
+.preview-general {
+    margin-top: 20px;
 }
 
 .preview-contact {
+    margin-top: 20px;
+}
+
+.preview-skills {
+    margin-top: 20px;
+}
+
+ol li {
+    list-style: square;
+    list-style-position: inside;
 }
 
 .preview .btn {
@@ -114,7 +128,6 @@ body {
     bottom: -45px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 5;
 }
 
 .form input {
@@ -124,8 +137,7 @@ body {
     padding: 7px;
     margin: 7px;
     display: flex;
-    width: 35vw;
-    min-width: 300px;
+    width: clamp(300px, 35vw, 585px);
 }
 
 ::placeholder {
