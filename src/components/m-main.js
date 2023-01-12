@@ -67,6 +67,18 @@ const Main = () => {
 
     const [image, setImage] = useState(null);
 
+    const [isEduPlusClicked, setIsEduPlusClicked] = useState(false);
+
+    const [isExpPlusClicked, setIsExpPlusClicked] = useState(false);
+
+    const plusExperience = () => {
+        setIsExpPlusClicked(true);
+    };
+
+    const plusEducation = () => {
+        setIsEduPlusClicked(true);
+    };
+
     const handlePhotoChange = (e) => {
         setImage(e.target.files[0]);
     };
@@ -174,6 +186,8 @@ const Main = () => {
                 education={education}
                 experiencePlus={experiencePlus}
                 educationPlus={educationPlus}
+                isEduPlusClicked={isEduPlusClicked}
+                isExpPlusClicked={isExpPlusClicked}
                 skills={skills}
                 handlePhotoChange={handlePhotoChange}
                 handleGeneralChange={handleGeneralChange}
@@ -182,6 +196,8 @@ const Main = () => {
                 handleExperiencePlusChange={handleExperiencePlusChange}
                 handleEducationPlusChange={handleEducationPlusChange}
                 handleSkillsChange={handleSkillsChange}
+                plusExperience={plusExperience}
+                plusEducation={plusEducation}
             />
             <Preview
                 general={general}

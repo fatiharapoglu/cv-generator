@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Education = (props) => {
-    const [isEduPlusClicked, setIsEduPlusClicked] = useState(false);
-
     const plusHtml = (
         <>
             <h1>Education #2</h1>
@@ -51,14 +49,10 @@ const Education = (props) => {
         </>
     );
 
-    const plusEducation = () => {
-        setIsEduPlusClicked(true);
-    };
-
     return (
         <div className="flex-container">
             <form>
-                <h1>{isEduPlusClicked ? "Education #1" : "Education"}</h1>
+                <h1>{props.isEduPlusClicked ? "Education #1" : "Education"}</h1>
                 <input
                     type="text"
                     value={props.data.uni}
@@ -101,10 +95,10 @@ const Education = (props) => {
                     placeholder="To (Year)"
                     id="eduToDate"
                 />
-                {isEduPlusClicked && plusHtml}
+                {props.isEduPlusClicked && plusHtml}
             </form>
-            {!isEduPlusClicked && (
-                <button onClick={plusEducation} className="btn">
+            {!props.isEduPlusClicked && (
+                <button onClick={props.plusEducation} className="btn">
                     Add New Education Info
                 </button>
             )}

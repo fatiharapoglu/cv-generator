@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Experience = (props) => {
-    const [isExpPlusClicked, setIsExpPlusClicked] = useState(false);
-
     const plusHtml = (
         <>
             <h1>Experience #2</h1>
@@ -44,14 +42,10 @@ const Experience = (props) => {
         </>
     );
 
-    const plusExperience = () => {
-        setIsExpPlusClicked(true);
-    };
-
     return (
         <div className="flex-container">
             <form>
-                <h1>{isExpPlusClicked ? "Experience #1" : "Experience"}</h1>
+                <h1>{props.isExpPlusClicked ? "Experience #1" : "Experience"}</h1>
                 <input
                     type="text"
                     value={props.data.position}
@@ -87,10 +81,10 @@ const Experience = (props) => {
                     placeholder="To (Year)"
                     id="expToDate"
                 />
-                {isExpPlusClicked && plusHtml}
+                {props.isExpPlusClicked && plusHtml}
             </form>
-            {!isExpPlusClicked && (
-                <button onClick={plusExperience} className="btn">
+            {!props.isExpPlusClicked && (
+                <button onClick={props.plusExperience} className="btn">
                     Add New Experience Info
                 </button>
             )}

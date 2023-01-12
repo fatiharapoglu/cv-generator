@@ -15,12 +15,16 @@ const Form = (props) => {
                 dataPlus={props.educationPlus}
                 handler={props.handleEducationChange}
                 handlerPlus={props.handleEducationPlusChange}
+                isEduPlusClicked={props.isEduPlusClicked}
+                plusEducation={props.plusEducation}
             />
             <Experience
                 data={props.experience}
                 dataPlus={props.experiencePlus}
                 handler={props.handleExperienceChange}
                 handlerPlus={props.handleExperiencePlusChange}
+                isExpPlusClicked={props.isExpPlusClicked}
+                plusExperience={props.plusExperience}
             />
             <Skills data={props.skills} handler={props.handleSkillsChange} />
         </div>
