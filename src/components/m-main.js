@@ -115,7 +115,7 @@ const Main = () => {
             adress: "Sakarya / Türkiye",
             phone: "+90 539 000 54 54",
             email: "fettan@cat.com",
-            desc: "I have long hairs and gave birth to 3 child.",
+            desc: "I have long hair and gave birth to 3 child.",
             born: "2017",
             place: "Sakarya / Türkiye",
             sex: "Female",

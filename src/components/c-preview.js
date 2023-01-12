@@ -81,14 +81,22 @@ const Preview = (props) => {
                     </div>
                 </div>
                 <div className="right-preview">
-                    <div className="preview-header"></div>
+                    <div className="preview-header">
+                        {props.general.name !== "" && props.general.lastName !== "" && (
+                            <li>
+                                {props.general.name} {props.general.lastName}
+                            </li>
+                        )}
+                        {props.general.title !== "" && <li>{props.general.title}</li>}
+                        {props.general.desc !== "" && <li>{props.general.desc}</li>}
+                    </div>
                     <div className="preview-main">
                         <div className="preview-experience"></div>
                         <div className="preview-education"></div>
                     </div>
                 </div>
                 <button className="btn" onClick={props.autofill}>
-                    Autofill for preview
+                    Autofill
                 </button>
             </div>
         </div>
