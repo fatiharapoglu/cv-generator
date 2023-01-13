@@ -91,29 +91,33 @@ const Preview = (props) => {
                             )}
                         </ul>
                     </div>
-                    <div className="preview-skills">
-                        <h1>Skills</h1>
+                    <div className="preview-hobbies">
+                        {props.hobbies.hobby1 !== "" && <h1>Social Activities</h1>}
                         <ol>
-                            {props.skills.skill1 !== "" && <li>{props.skills.skill1}</li>}
-                            {props.skills.skill2 !== "" && <li>{props.skills.skill2}</li>}
-                            {props.skills.skill3 !== "" && <li>{props.skills.skill3}</li>}
-                            {props.skills.skill4 !== "" && <li>{props.skills.skill4}</li>}
-                            {props.skills.skill5 !== "" && <li>{props.skills.skill5}</li>}
-                            {props.skills.skill6 !== "" && <li>{props.skills.skill6}</li>}
-                            {props.skills.skill7 !== "" && <li>{props.skills.skill7}</li>}
-                            {props.skills.skill8 !== "" && <li>{props.skills.skill8}</li>}
+                            {props.hobbies.hobby1 !== "" && <li>{props.hobbies.hobby1}</li>}
+                            {props.hobbies.hobby2 !== "" && <li>{props.hobbies.hobby2}</li>}
+                            {props.hobbies.hobby3 !== "" && <li>{props.hobbies.hobby3}</li>}
+                            {props.hobbies.hobby4 !== "" && <li>{props.hobbies.hobby4}</li>}
+                            {props.hobbies.hobby5 !== "" && <li>{props.hobbies.hobby5}</li>}
+                            {props.hobbies.hobby6 !== "" && <li>{props.hobbies.hobby6}</li>}
+                            {props.hobbies.hobby7 !== "" && <li>{props.hobbies.hobby7}</li>}
+                            {props.hobbies.hobby8 !== "" && <li>{props.hobbies.hobby8}</li>}
                         </ol>
                     </div>
                 </div>
                 <div className="right-preview">
                     <div className="preview-header">
                         {props.general.name !== "" && props.general.lastName !== "" && (
-                            <li>
+                            <li className="header-name">
                                 {props.general.name} {props.general.lastName}
                             </li>
                         )}
-                        {props.general.title !== "" && <li>{props.general.title}</li>}
-                        {props.general.desc !== "" && <li>{props.general.desc}</li>}
+                        {props.general.title !== "" && (
+                            <li className="header-title">{props.general.title}</li>
+                        )}
+                        {props.general.desc !== "" && (
+                            <li className="header-description">{props.general.desc}</li>
+                        )}
                     </div>
                     <div className="preview-main">
                         <div className="preview-experience">
@@ -156,18 +160,18 @@ const Preview = (props) => {
                                 </div>
                             )}
                         </div>
-                        <div className="preview-hobbies">
-                            <h1>SOCIAL ACTIVITIES</h1>
-                            <ul>
-                                {props.hobbies.hobby1 !== "" && <li>{props.hobbies.hobby1}</li>}
-                                {props.hobbies.hobby2 !== "" && <li>{props.hobbies.hobby2}</li>}
-                                {props.hobbies.hobby3 !== "" && <li>{props.hobbies.hobby3}</li>}
-                                {props.hobbies.hobby4 !== "" && <li>{props.hobbies.hobby4}</li>}
-                                {props.hobbies.hobby5 !== "" && <li>{props.hobbies.hobby5}</li>}
-                                {props.hobbies.hobby6 !== "" && <li>{props.hobbies.hobby6}</li>}
-                                {props.hobbies.hobby7 !== "" && <li>{props.hobbies.hobby7}</li>}
-                                {props.hobbies.hobby8 !== "" && <li>{props.hobbies.hobby8}</li>}
-                            </ul>
+                        <div className="preview-skills">
+                            <h1>SKILLS</h1>
+                            <ol>
+                                {props.skills.skill1 !== "" && <li>{props.skills.skill1}</li>}
+                                {props.skills.skill2 !== "" && <li>{props.skills.skill2}</li>}
+                                {props.skills.skill3 !== "" && <li>{props.skills.skill3}</li>}
+                                {props.skills.skill4 !== "" && <li>{props.skills.skill4}</li>}
+                                {props.skills.skill5 !== "" && <li>{props.skills.skill5}</li>}
+                                {props.skills.skill6 !== "" && <li>{props.skills.skill6}</li>}
+                                {props.skills.skill7 !== "" && <li>{props.skills.skill7}</li>}
+                                {props.skills.skill8 !== "" && <li>{props.skills.skill8}</li>}
+                            </ol>
                         </div>
                     </div>
                 </div>

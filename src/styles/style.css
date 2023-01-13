@@ -5,12 +5,14 @@
     --primary: rgb(255 255 255);
     --secondary: rgb(36 36 36);
     --third: rgb(166 166 166);
+    --fourth: black;
     --font-1: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     --font-2: Verdana, Geneva, Tahoma, sans-serif;
     --border: 1px dashed rgb(58, 58, 58);
     --preview-color-1: rgb(34, 34, 34);
     --preview-color-2: rgb(209, 209, 209);
-    --preview-color-3: rgb(107, 0, 0);
+    --preview-color-3: rgb(71, 71, 71);
+    --preview-color-4: rgb(15, 15, 15);
 }
 
 * {
@@ -75,7 +77,7 @@ body {
     border: var(--border);
     width: 585px;
     aspect-ratio: 0.7;
-    padding: 7px;
+    padding: 1px;
     display: flex;
 }
 
@@ -85,6 +87,7 @@ body {
     background-color: var(--preview-color-1);
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .right-preview {
@@ -98,6 +101,7 @@ body {
     width: 80%;
     aspect-ratio: 1;
     margin-top: 20px;
+    align-self: center;
 }
 
 .preview-photo img {
@@ -107,16 +111,35 @@ body {
     box-shadow: 0px 0px 10px 0px black;
 }
 
+.left-preview h1 {
+    margin: 10px 0 10px 0;
+    margin-left: -20px;
+    padding: 3px 0 3px 20px;
+    background-color: var(--fourth);
+}
+
+.left-preview li {
+    margin: 10px 0 10px 0;
+}
+
+.left-preview span {
+    font-weight: bold;
+}
+
 .preview-general {
-    margin-top: 20px;
+    padding-left: 20px;
 }
 
 .preview-contact {
-    margin-top: 20px;
+    padding-left: 20px;
 }
 
-.preview-skills {
-    margin-top: 20px;
+.preview-hobbies li {
+    margin: 0;
+}
+
+.preview-hobbies {
+    padding-left: 20px;
 }
 
 ol li {
@@ -132,18 +155,69 @@ ol li {
 }
 
 .preview-header {
-    color: var(--preview-color-3);
+    background-color: var(--preview-color-3);
+    margin: -10px;
+    padding: 20px;
+}
+
+.header-name {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.header-description {
+    text-align: justify;
+    font-size: 0.65rem;
+    padding-top: 20px;
+}
+
+.preview-main h1 {
+    letter-spacing: 10px;
+    padding: 5px 0;
+    color: var(--fourth);
+    border-bottom: var(--border);
+}
+
+.preview-experience-1 {
+    padding-top: 10px;
+}
+
+.preview-experience-2 {
+    padding-top: 10px;
+}
+
+.preview-education-1 {
+    padding-top: 10px;
+}
+
+.preview-education-2 {
+    padding-top: 10px;
+}
+
+.preview-skills ol {
+    padding-top: 10px;
+}
+
+.preview-main {
+    padding: 0 10px;
 }
 
 .preview-education {
     margin-top: 20px;
+    height: 150px;
 }
 
 .preview-experience {
     margin-top: 20px;
+    height: 150px;
 }
 
-.preview-hobbies {
+.preview-skills {
     margin-top: 20px;
 }
 
