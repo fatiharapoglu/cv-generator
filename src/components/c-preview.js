@@ -13,45 +13,61 @@ const Preview = (props) => {
                     </div>
                     <div className="preview-general">
                         <ul>
-                            <h1>Personal Information</h1>
+                            <h1>
+                                Personal Information{" "}
+                                <i className="fa-regular fa-id-badge icon-right"></i>
+                            </h1>
                             {props.general.born !== "" && (
                                 <li>
-                                    <span>Date of Birth:</span>
+                                    <span>
+                                        <i className="fa-solid fa-cake-candles"></i> Date of Birth:
+                                    </span>
                                     <br />
                                     {props.general.born}
                                 </li>
                             )}
                             {props.general.place !== "" && (
                                 <li>
-                                    <span>Place of Birth:</span>
+                                    <span>
+                                        <i className="fa-solid fa-location-pin"></i> Place of Birth:
+                                    </span>
                                     <br />
                                     {props.general.place}
                                 </li>
                             )}
                             {props.general.sex !== "" && (
                                 <li>
-                                    <span>Sex:</span>
+                                    <span>
+                                        <i className="fa-solid fa-venus-mars"></i> Sex:
+                                    </span>
                                     <br />
                                     {props.general.sex}
                                 </li>
                             )}
                             {props.general.marital !== "" && (
                                 <li>
-                                    <span>Marital Status:</span>
+                                    <span>
+                                        <i className="fa-solid fa-ring"></i> Marital Status:
+                                    </span>
                                     <br />
                                     {props.general.marital}
                                 </li>
                             )}
                             {props.general.drive !== "" && (
                                 <li>
-                                    <span>Driving Licence:</span>
+                                    <span>
+                                        <i className="fa-solid fa-car"></i> Driving Licence:
+                                    </span>
                                     <br />
                                     {props.general.drive}
                                 </li>
                             )}
                             {props.general.military !== "" && (
                                 <li>
-                                    <span>Military Service:</span>
+                                    <span>
+                                        <i className="fa-solid fa-person-military-rifle"></i>{" "}
+                                        Military Service:
+                                    </span>
                                     <br />
                                     {props.general.military}
                                 </li>
@@ -59,32 +75,43 @@ const Preview = (props) => {
                         </ul>
                     </div>
                     <div className="preview-contact">
-                        <h1>Contact Information</h1>
+                        <h1>
+                            Contact Information{" "}
+                            <i className="fa-solid fa-mobile-screen-button icon-right"></i>
+                        </h1>
                         <ul>
                             {props.general.adress !== "" && (
                                 <li>
-                                    <span>Adress:</span>
+                                    <span>
+                                        <i className="fa-solid fa-location-dot"></i> Adress:
+                                    </span>
                                     <br />
                                     {props.general.adress}
                                 </li>
                             )}
                             {props.general.phone !== "" && (
                                 <li>
-                                    <span>Phone:</span>
+                                    <span>
+                                        <i className="fa-solid fa-phone"></i> Phone:
+                                    </span>
                                     <br />
                                     {props.general.phone}
                                 </li>
                             )}
                             {props.general.email !== "" && (
                                 <li>
-                                    <span>E-mail:</span>
+                                    <span>
+                                        <i className="fa-solid fa-at"></i> E-mail:
+                                    </span>
                                     <br />
                                     {props.general.email}
                                 </li>
                             )}
                             {props.general.web !== "" && (
                                 <li>
-                                    <span>Web Site:</span>
+                                    <span>
+                                        <i className="fa-solid fa-globe"></i> Web Site:
+                                    </span>
                                     <br />
                                     {props.general.web}
                                 </li>
@@ -92,7 +119,11 @@ const Preview = (props) => {
                         </ul>
                     </div>
                     <div className="preview-hobbies">
-                        {props.hobbies.hobby1 !== "" && <h1>Social Activities</h1>}
+                        {props.hobbies.hobby1 !== "" && (
+                            <h1>
+                                Social Activities <i className="fa-solid fa-icons icon-right"></i>
+                            </h1>
+                        )}
                         <ol>
                             {props.hobbies.hobby1 !== "" && <li>{props.hobbies.hobby1}</li>}
                             {props.hobbies.hobby2 !== "" && <li>{props.hobbies.hobby2}</li>}

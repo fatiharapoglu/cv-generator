@@ -3,7 +3,9 @@ import React from "react";
 const Experience = (props) => {
     const plusHtml = (
         <>
-            <h1>Experience #2</h1>
+            <h1>
+                Experience #2 <i className="fa-solid fa-briefcase"></i>
+            </h1>
             <input
                 type="text"
                 value={props.dataPlus.positionPlus}
@@ -45,7 +47,10 @@ const Experience = (props) => {
     return (
         <div className="flex-container">
             <form>
-                <h1>{props.isExpPlusClicked ? "Experience #1" : "Experience"}</h1>
+                <h1>
+                    {props.isExpPlusClicked ? "Experience #1" : "Experience"}{" "}
+                    <i className="fa-solid fa-briefcase"></i>
+                </h1>
                 <input
                     type="text"
                     value={props.data.position}
@@ -85,7 +90,7 @@ const Experience = (props) => {
             </form>
             {!props.isExpPlusClicked && (
                 <button onClick={props.plusExperience} className="btn">
-                    Add New Experience Info
+                    <i className="fa-solid fa-plus"></i> Add New Experience
                 </button>
             )}
         </div>

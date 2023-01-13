@@ -10,7 +10,9 @@ const Skills = (props) => {
     return (
         <div className="flex-container">
             <ul>
-                <h1>Skills</h1>
+                <h1>
+                    Skills <i className="fa-solid fa-screwdriver-wrench"></i>
+                </h1>
                 <li>
                     <input
                         type="text"
@@ -100,7 +102,7 @@ const Skills = (props) => {
             </ul>
             {!(counter > 7) && (
                 <button onClick={addSkill} className="btn">
-                    Add New Skill
+                    <i className="fa-solid fa-plus"></i> Add New Skill
                 </button>
             )}
         </div>

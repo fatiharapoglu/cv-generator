@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer class="footer">
-            <div class="about">
+        <footer className="footer">
+            <div className="about">
                 <span>
                     <a
                         href="https://www.theodinproject.com/lessons/node-path-javascript-cv-application"
@@ -15,7 +15,7 @@ const Footer = () => {
                 </span>
                 <a href="https://github.com/fatiharapoglu">
                     <img
-                        class="github-icon"
+                        className="github-icon"
                         src="assets/GitHub-Mark-Light-120px-plus.png"
                         alt="github-logo"
                     />

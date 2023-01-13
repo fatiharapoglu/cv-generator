@@ -3,7 +3,9 @@ import React from "react";
 const Education = (props) => {
     const plusHtml = (
         <>
-            <h1>Education #2</h1>
+            <h1>
+                Education #2 <i className="fa-solid fa-user-graduate"></i>
+            </h1>
             <input
                 type="text"
                 value={props.dataPlus.uniPlus}
@@ -52,7 +54,10 @@ const Education = (props) => {
     return (
         <div className="flex-container">
             <form>
-                <h1>{props.isEduPlusClicked ? "Education #1" : "Education"}</h1>
+                <h1>
+                    {props.isEduPlusClicked ? "Education #1" : "Education"}{" "}
+                    <i className="fa-solid fa-user-graduate"></i>
+                </h1>
                 <input
                     type="text"
                     value={props.data.uni}
@@ -99,7 +104,7 @@ const Education = (props) => {
             </form>
             {!props.isEduPlusClicked && (
                 <button onClick={props.plusEducation} className="btn">
-                    Add New Education Info
+                    <i className="fa-solid fa-plus"></i> Add New Education
                 </button>
             )}
         </div>

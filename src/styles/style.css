@@ -64,6 +64,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 40px 0;
 }
 
 .preview {
@@ -75,9 +76,8 @@ body {
 .preview .fixed {
     position: fixed;
     border: var(--border);
-    width: 585px;
+    width: 593px;
     aspect-ratio: 0.7;
-    padding: 1px;
     display: flex;
 }
 
@@ -110,14 +110,15 @@ body {
 .preview-photo img {
     width: 100%;
     height: 100%;
+    aspect-ratio: 1;
     border-radius: 50%;
     box-shadow: 0px 0px 10px 0px black;
 }
 
 .left-preview h1 {
     margin: 10px 0 10px 0;
-    margin-left: -20px;
-    padding: 3px 0 3px 20px;
+    margin-left: -15px;
+    padding: 3px 0 3px 15px;
     background-color: var(--fourth);
 }
 
@@ -130,19 +131,20 @@ body {
 }
 
 .preview-general {
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .preview-contact {
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .preview-hobbies li {
     margin: 0;
+    margin-bottom: 3px;
 }
 
 .preview-hobbies {
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 ol li {
@@ -152,9 +154,11 @@ ol li {
 
 .preview .btn {
     position: absolute;
-    bottom: -45px;
+    bottom: -35px;
     left: 50%;
     transform: translateX(-50%);
+    height: 30px;
+    padding: 0 10px;
 }
 
 .preview-header {
@@ -208,6 +212,10 @@ ol li {
     padding-top: 10px;
 }
 
+.preview-skills li {
+    margin-bottom: 3px;
+}
+
 .preview-main {
     color: var(--preview-color-4);
     padding: 20px 20px 0 20px;
@@ -215,18 +223,6 @@ ol li {
     flex-direction: column;
     height: 70%;
     justify-content: space-between;
-}
-
-.preview-education {
-    margin-top: 20px;
-}
-
-.preview-experience {
-    margin-top: 20px;
-}
-
-.preview-skills {
-    margin-top: 20px;
 }
 
 .preview-experience-main {
@@ -237,6 +233,12 @@ ol li {
 .preview-education-main {
     display: flex;
     justify-content: space-between;
+}
+
+.icon-right {
+    float: right;
+    padding-right: 10px;
+    padding-top: 1px;
 }
 
 .form input {
@@ -253,6 +255,8 @@ ol li {
 .form input:hover {
     letter-spacing: 2px;
     font-weight: bold;
+    background-color: white;
+    color: black;
 }
 
 ::placeholder {
@@ -267,6 +271,14 @@ ol li {
     padding: 7px;
     margin: 7px;
     border: var(--border);
+}
+
+.flex-container:first-child {
+    margin-top: 0;
+}
+
+.flex-container:last-child {
+    margin-bottom: 0;
 }
 
 .form h1 {

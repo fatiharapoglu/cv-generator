@@ -10,7 +10,9 @@ const Hobbies = (props) => {
     return (
         <div className="flex-container">
             <ul>
-                <h1>Hobbies</h1>
+                <h1>
+                    Hobbies <i className="fa-solid fa-icons"></i>
+                </h1>
                 <li>
                     <input
                         type="text"
@@ -100,7 +102,7 @@ const Hobbies = (props) => {
             </ul>
             {!(counter > 7) && (
                 <button onClick={addHobby} className="btn">
-                    Add New Hobbies
+                    <i className="fa-solid fa-plus"></i> Add New Hobby
                 </button>
             )}
         </div>

@@ -4,7 +4,9 @@ const General = (props) => {
     return (
         <div className="flex-container">
             <form>
-                <h1>General Information</h1>
+                <h1>
+                    General Information <i className="fa-solid fa-image-portrait"></i>
+                </h1>
                 <input
                     type="text"
                     value={props.data.name}
