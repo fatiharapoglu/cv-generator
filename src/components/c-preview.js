@@ -115,11 +115,14 @@ const Preview = (props) => {
                         {props.general.title !== "" && (
                             <li className="header-title">{props.general.title}</li>
                         )}
-                        {props.general.desc !== "" && (
-                            <li className="header-description">{props.general.desc}</li>
-                        )}
                     </div>
                     <div className="preview-main">
+                        <div>
+                            <h1>PROFILE</h1>
+                            {props.general.desc !== "" && (
+                                <li className="preview-description">{props.general.desc}</li>
+                            )}
+                        </div>
                         <div className="preview-experience">
                             <h1>EXPERIENCE</h1>
                             <div className="preview-experience-1">
