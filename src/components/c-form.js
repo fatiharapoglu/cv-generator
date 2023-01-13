@@ -5,12 +5,12 @@ import General from "./c-general";
 import Hobbies from "./c-hobbies";
 import Photo from "./c-photo";
 import Skills from "./c-skills";
+import Footer from "./m-footer";
 
 const Form = (props) => {
     return (
         <div className="form">
             <General data={props.general} handler={props.handleGeneralChange} />
-            <Photo handler={props.handlePhotoChange} />
             <Education
                 data={props.education}
                 dataPlus={props.educationPlus}
@@ -29,6 +29,8 @@ const Form = (props) => {
             />
             <Skills data={props.skills} handler={props.handleSkillsChange} />
             <Hobbies data={props.hobbies} handler={props.handleHobbiesChange} />
+            <Photo handler={props.handlePhotoChange} />
+            <Footer />
         </div>
     );
 };

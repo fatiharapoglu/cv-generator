@@ -291,7 +291,6 @@ ol li {
 .footer {
     display: flex;
     justify-content: center;
-    height: 5vh;
 }
 
 .about {
