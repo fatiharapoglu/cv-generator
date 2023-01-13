@@ -91,16 +91,19 @@ body {
 }
 
 .right-preview {
-    flex: 2;
+    flex: 2.5;
     height: 100%;
     background-color: var(--preview-color-2);
-    padding: 10px;
 }
 
 .preview-photo {
     width: 80%;
     aspect-ratio: 1;
     margin-top: 20px;
+    align-self: center;
+}
+
+.form-photo {
     align-self: center;
 }
 
@@ -156,8 +159,12 @@ ol li {
 
 .preview-header {
     background-color: var(--preview-color-3);
-    margin: -10px;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 15%;
 }
 
 .header-name {
@@ -172,15 +179,12 @@ ol li {
 
 .preview-description {
     text-align: justify;
-    font-size: 0.65rem;
     padding-top: 20px;
-    color: var(--preview-color-4);
 }
 
 .preview-main h1 {
     letter-spacing: 10px;
     padding: 5px 0;
-    color: var(--fourth);
     border-bottom: var(--border);
 }
 
@@ -205,7 +209,12 @@ ol li {
 }
 
 .preview-main {
-    padding: 30px 10px 10px 10px;
+    color: var(--preview-color-4);
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-between;
 }
 
 .preview-education {
@@ -220,14 +229,30 @@ ol li {
     margin-top: 20px;
 }
 
+.preview-experience-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview-education-main {
+    display: flex;
+    justify-content: space-between;
+}
+
 .form input {
     background-color: var(--secondary);
     color: var(--third);
-    border: var(--border);
+    border: none;
     padding: 7px;
     margin: 7px;
     display: flex;
     width: clamp(300px, 35vw, 585px);
+    transition: all 0.5s ease-in-out;
+}
+
+.form input:hover {
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 ::placeholder {
@@ -239,10 +264,16 @@ ol li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 7px;
+    margin: 7px;
+    border: var(--border);
 }
 
 .form h1 {
     padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
 }
 
 .footer {

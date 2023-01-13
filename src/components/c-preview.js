@@ -126,45 +126,82 @@ const Preview = (props) => {
                         <div className="preview-experience">
                             <h1>EXPERIENCE</h1>
                             <div className="preview-experience-1">
-                                <div>
+                                <div className="preview-experience-position">
                                     {props.experience.position}
-                                    {props.experience.expCity !== "" &&
-                                        ` (${props.experience.expCity})`}
                                 </div>
-                                <div>
-                                    {props.experience.company}
-                                    {props.experience.expFromDate}
-                                    {props.experience.expToDate}
+                                <div className="preview-experience-main">
+                                    <div>
+                                        {props.experience.company}
+                                        {props.experience.expCity !== "" &&
+                                            ` / ${props.experience.expCity}`}
+                                    </div>
+                                    <div>
+                                        {props.experience.expFromDate}
+                                        {props.experience.expToDate !== "" &&
+                                            ` – ${props.experience.expToDate}`}
+                                    </div>
                                 </div>
                             </div>
                             {props.isExpPlusClicked && (
                                 <div className="preview-experience-2">
-                                    {props.experiencePlus.positionPlus}
-                                    {props.experiencePlus.companyPlus}
-                                    {props.experiencePlus.expCityPlus}
-                                    {props.experiencePlus.expFromDatePlus}
-                                    {props.experiencePlus.expToDatePlus}
+                                    <div className="preview-experience-position">
+                                        {props.experiencePlus.positionPlus}
+                                    </div>
+                                    <div className="preview-experience-main">
+                                        <div>
+                                            {props.experiencePlus.companyPlus}
+                                            {props.experiencePlus.expCityPlus !== "" &&
+                                                ` / ${props.experiencePlus.expCityPlus}`}
+                                        </div>
+                                        <div>
+                                            {props.experiencePlus.expFromDatePlus}
+                                            {props.experiencePlus.expToDatePlus !== "" &&
+                                                ` – ${props.experiencePlus.expToDatePlus}`}
+                                        </div>
+                                    </div>
                                 </div>
                             )}
                         </div>
                         <div className="preview-education">
                             <h1>EDUCATION</h1>
                             <div className="preview-education-1">
-                                {props.education.uni}
-                                {props.education.eduCity}
-                                {props.education.degree}
-                                {props.education.subject}
-                                {props.education.eduFromDate}
-                                {props.education.eduToDate}
+                                <div className="preview-education-position">
+                                    {props.education.subject}
+                                    {props.education.degree !== "" &&
+                                        ` / ${props.education.degree}`}
+                                </div>
+                                <div className="preview-education-main">
+                                    <div>
+                                        {props.education.uni}
+                                        {props.education.eduCity !== "" &&
+                                            ` (${props.education.eduCity})`}
+                                    </div>
+                                    <div>
+                                        {props.education.eduFromDate}
+                                        {props.education.eduToDate !== "" &&
+                                            ` – ${props.education.eduToDate}`}
+                                    </div>
+                                </div>
                             </div>
                             {props.isEduPlusClicked && (
                                 <div className="preview-education-2">
-                                    {props.educationPlus.uniPlus}
-                                    {props.educationPlus.eduCityPlus}
-                                    {props.educationPlus.degreePlus}
-                                    {props.educationPlus.subjectPlus}
-                                    {props.educationPlus.eduFromDatePlus}
-                                    {props.educationPlus.eduToDatePlus}
+                                    <div className="preview-education-position">
+                                        {props.educationPlus.subjectPlus}
+                                        {props.educationPlus.degreePlus !== "" &&
+                                            ` / ${props.educationPlus.degreePlus}`}
+                                    </div>
+                                    <div className="preview-education-main">
+                                        <div>
+                                            {props.educationPlus.uniPlus}
+                                            {props.educationPlus.eduCityPlus !== "" &&
+                                                ` (${props.educationPlus.eduCityPlus})`}
+                                        </div>
+                                        <div>
+                                            {props.educationPlus.eduFromDatePlus}
+                                            {props.educationPlus.eduToDatePlus !== "" &&
+                                                ` – ${props.educationPlus.eduToDatePlus}`}
+                                        </div>
+                                    </div>
                                 </div>
                             )}
                         </div>
