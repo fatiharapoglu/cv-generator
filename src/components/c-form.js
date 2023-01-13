@@ -5,7 +5,6 @@ import General from "./c-general";
 import Hobbies from "./c-hobbies";
 import Photo from "./c-photo";
 import Skills from "./c-skills";
-import Footer from "./m-footer";
 
 const Form = (props) => {
     return (
@@ -30,7 +29,6 @@ const Form = (props) => {
             <Skills data={props.skills} handler={props.handleSkillsChange} />
             <Hobbies data={props.hobbies} handler={props.handleHobbiesChange} />
             <Photo handler={props.handlePhotoChange} />
-            <Footer />
         </div>
     );
 };

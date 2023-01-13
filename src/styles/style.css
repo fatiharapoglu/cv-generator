@@ -37,6 +37,7 @@ body {
     min-height: 100vh;
     background-color: var(--background-primary);
     color: var(--primary);
+    position: relative;
 }
 
 .btn {
@@ -289,8 +290,10 @@ ol li {
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    bottom: 5px;
+    left: 25%;
+    transform: translateX(-50%);
 }
 
 .about {
