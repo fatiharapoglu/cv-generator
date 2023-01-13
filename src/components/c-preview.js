@@ -126,11 +126,16 @@ const Preview = (props) => {
                         <div className="preview-experience">
                             <h1>EXPERIENCE</h1>
                             <div className="preview-experience-1">
-                                {props.experience.position}
-                                {props.experience.company}
-                                {props.experience.expCity}
-                                {props.experience.expFromDate}
-                                {props.experience.expToDate}
+                                <div>
+                                    {props.experience.position}
+                                    {props.experience.expCity !== "" &&
+                                        ` (${props.experience.expCity})`}
+                                </div>
+                                <div>
+                                    {props.experience.company}
+                                    {props.experience.expFromDate}
+                                    {props.experience.expToDate}
+                                </div>
                             </div>
                             {props.isExpPlusClicked && (
                                 <div className="preview-experience-2">

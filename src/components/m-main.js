@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "./c-form";
 import Preview from "./c-preview";
 import mocha from "../assets/mocha.jpg";
+import avatar from "../assets/avatar.png";
 
 const Main = () => {
     const [general, setGeneral] = useState({
@@ -77,7 +78,7 @@ const Main = () => {
         hobby8: "",
     });
 
-    const [image, setImage] = useState(null);
+    const [image, setImage] = useState(avatar);
 
     const [isEduPlusClicked, setIsEduPlusClicked] = useState(false);
 
