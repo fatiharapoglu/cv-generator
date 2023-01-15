@@ -5,7 +5,7 @@ import Preview from "./c-preview";
 import mocha from "../assets/mocha.jpg";
 import avatar from "../assets/avatar.png";
 
-const Main = () => {
+const MainTR = () => {
     const [general, setGeneral] = useState({
         name: "",
         lastName: "",
@@ -145,40 +145,40 @@ const Main = () => {
         setGeneral({
             name: "Mocha",
             lastName: "Fettan",
-            title: "A Cat",
-            adress: "Sakarya / Turkey",
+            title: "Kedi",
+            adress: "Sakarya / Türkiye",
             phone: "+90 MEOW MEOW ME OW",
             email: "fettan@cat.com",
             web: "worldwideweb.com",
-            desc: "I have a long and majestic fur and gave birth to 3 child.",
-            born: "23 March 2017",
-            place: "Eskişehir / Turkey",
-            sex: "Female",
-            marital: "Single",
-            drive: "No need, fast enough",
-            military: "Done",
+            desc: "Uzun tüylerim var ve 3 çocuk doğurdum.",
+            born: "23 Mart 2017",
+            place: "Eskişehir / Türkiye",
+            sex: "Dişi",
+            marital: "Bekar",
+            drive: "Gerek yok, yeterince hızlı",
+            military: "Yapıldı",
         });
         setExperience({
-            position: "Creator of streets",
-            company: "The Rogue Felines",
+            position: "Caddeler Yaratıcısı",
+            company: "Yaramaz Kediler Klanı",
             expCity: "Eskişehir",
             expFromDate: "2017",
-            expToDate: "Present",
+            expToDate: "Devam",
         });
         setEducation({
-            uni: "Ms. Whiskers Elementary",
+            uni: "Ms. Whiskers İlkokulu",
             eduCity: "Eskişehir",
-            degree: "Creator's Degree",
-            subject: "Felines?",
+            degree: "Yaratıcı Lisansı",
+            subject: "Kedi Familyası?",
             eduFromDate: "2017",
             eduToDate: "2020",
         });
         setExperiencePlus({
-            positionPlus: "Creator of worlds",
-            companyPlus: "World",
+            positionPlus: "Dünyalar Yaratıcısı",
+            companyPlus: "Dünya",
             expCityPlus: "Sakarya",
             expFromDatePlus: "2017",
-            expToDatePlus: "Present",
+            expToDatePlus: "Devam",
         });
         setEducationPlus({
             uniPlus: "",
@@ -189,24 +189,24 @@ const Main = () => {
             eduToDatePlus: "",
         });
         setSkills({
-            skill1: "Eating human food",
-            skill2: "Does not meow, only purrs",
-            skill3: "Can fit into small spaces",
-            skill4: "Can nap anywhere",
-            skill5: "and anytime",
-            skill6: "Mother of 3 childs",
-            skill7: "Running really fast",
-            skill8: "Can live in streets",
+            skill1: "İnsan yemeği yemek",
+            skill2: "Miyavlamaz, sadece mırlar",
+            skill3: "Küçük alanlara sığabilmek",
+            skill4: "Her yerde kestirebilmek",
+            skill5: "Ve her zaman kestirebilmek",
+            skill6: "3 çocuk annesi",
+            skill7: "Gerçekten hızlı koşmak",
+            skill8: "Sokaklarda yaşayabilir",
         });
         setHobbies({
-            hobby1: "Likes to bring gifts like dead mice",
-            hobby2: "Knocking things over",
-            hobby3: "And just for the fun of it",
-            hobby4: "Sleeping atop of cars",
-            hobby5: "Playing hide and seek",
-            hobby6: "Sitting in unexpected places",
-            hobby7: "Making silly faces",
-            hobby8: "Living in streets or home",
+            hobby1: "Ölü fareler gibi hediyeler getirmek",
+            hobby2: "Bir şeyleri devirmek",
+            hobby3: "Ve sadece eğlence için",
+            hobby4: "Arabaların üzerinde uyumak",
+            hobby5: "Saklambaç oynamak",
+            hobby6: "Beklenmedik yerlerde oturmak",
+            hobby7: "Aptal suratlar yapmak",
+            hobby8: "Sokakta veya evde yaşayabilir",
         });
         setImage(mocha);
     };
@@ -262,4 +262,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default MainTR;

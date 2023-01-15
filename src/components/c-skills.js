@@ -11,7 +11,7 @@ const Skills = (props) => {
         <div className="flex-container">
             <ul>
                 <h1>
-                    Skills <i className="fa-solid fa-screwdriver-wrench"></i>
+                    SKILLS <i className="fa-solid fa-screwdriver-wrench"></i>
                 </h1>
                 <li>
                     <input

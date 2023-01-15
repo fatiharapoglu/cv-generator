@@ -106,7 +106,6 @@ body {
     background-color: var(--preview-color-1);
     display: flex;
     flex-direction: column;
-    gap: 5px;
 }
 
 .right-preview {
@@ -141,17 +140,18 @@ body {
     padding: 5px 0 4px 20px;
     background-color: var(--preview-color-2);
     font-family: var(--font-4);
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1px;
 }
 
 .left-preview li {
-    margin: 10px 0 10px 0;
+    margin: 7px 0 7px 0;
 }
 
 .left-preview span {
     font-family: var(--font-4);
     color: var(--preview-color-4);
+    font-weight: 500;
 }
 
 .preview-general {
@@ -172,7 +172,7 @@ body {
 }
 
 ol li {
-    list-style: square;
+    list-style: disc;
     list-style-position: inside;
 }
 
@@ -194,6 +194,27 @@ ol li {
     height: 30px;
     padding: 0 10px;
     width: 100px;
+}
+
+.btn.language {
+    position: fixed;
+    border: none;
+    top: 0;
+    right: 0;
+    height: 30px;
+    padding: 0 10px;
+    width: 100px;
+}
+
+.active {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn.language:hover {
+    color: var(--primary);
+    scale: none;
 }
 
 .preview-header {
@@ -307,7 +328,6 @@ ol li {
 
 .form h1 {
     padding: 10px;
-    text-transform: uppercase;
     letter-spacing: 3px;
     text-align: right;
     font-family: var(--font-3);

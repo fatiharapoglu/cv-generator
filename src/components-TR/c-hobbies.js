@@ -11,14 +11,14 @@ const Hobbies = (props) => {
         <div className="flex-container">
             <ul>
                 <h1>
-                    HOBBIES <i className="fa-solid fa-icons"></i>
+                    HOBİLER <i className="fa-solid fa-icons"></i>
                 </h1>
                 <li>
                     <input
                         type="text"
                         value={props.data["hobby1"]}
                         onChange={props.handler}
-                        placeholder={"Hobby #1"}
+                        placeholder={"Hobi #1"}
                         id={"hobby1"}
                     />
                 </li>
@@ -28,7 +28,7 @@ const Hobbies = (props) => {
                             type="text"
                             value={props.data["hobby2"]}
                             onChange={props.handler}
-                            placeholder={"Hobby #2"}
+                            placeholder={"Hobi #2"}
                             id={"hobby2"}
                         />
                     </li>
@@ -39,7 +39,7 @@ const Hobbies = (props) => {
                             type="text"
                             value={props.data["hobby3"]}
                             onChange={props.handler}
-                            placeholder={"Hobby #3"}
+                            placeholder={"Hobi #3"}
                             id={"hobby3"}
                         />
                     </li>
@@ -50,7 +50,7 @@ const Hobbies = (props) => {
                             type="text"
                             value={props.data["hobby4"]}
                             onChange={props.handler}
-                            placeholder={"Hobby #4"}
+                            placeholder={"Hobi #4"}
                             id={"hobby4"}
                         />
                     </li>
@@ -61,7 +61,7 @@ const Hobbies = (props) => {
                             type="text"
                             value={props.data["hobby5"]}
                             onChange={props.handler}
-                            placeholder={"Hobby #5"}
+                            placeholder={"Hobi #5"}
                             id={"hobby5"}
                         />
                     </li>
@@ -72,7 +72,7 @@ const Hobbies = (props) => {
                             type="text"
                             value={props.data["hobby6"]}
                             onChange={props.handler}
-                            placeholder={"Hobby #6"}
+                            placeholder={"Hobi #6"}
                             id={"hobby6"}
                         />
                     </li>
@@ -83,7 +83,7 @@ const Hobbies = (props) => {
                             type="text"
                             value={props.data["hobby7"]}
                             onChange={props.handler}
-                            placeholder={"Hobby #7"}
+                            placeholder={"Hobi #7"}
                             id={"hobby7"}
                         />
                     </li>
@@ -94,7 +94,7 @@ const Hobbies = (props) => {
                             type="text"
                             value={props.data["hobby8"]}
                             onChange={props.handler}
-                            placeholder={"Hobby #8"}
+                            placeholder={"Hobi #8"}
                             id={"hobby8"}
                         />
                     </li>
@@ -102,7 +102,7 @@ const Hobbies = (props) => {
             </ul>
             {!(counter > 7) && (
                 <button onClick={addHobby} className="btn">
-                    <i className="fa-solid fa-plus"></i> Add New Hobby
+                    <i className="fa-solid fa-plus"></i> Yeni Hobi Ekle
                 </button>
             )}
         </div>

@@ -5,83 +5,83 @@ const General = (props) => {
         <div className="flex-container">
             <form>
                 <h1>
-                    GENERAL INFORMATION <i className="fa-solid fa-image-portrait"></i>
+                    GENEL BİLGİLER <i className="fa-solid fa-image-portrait"></i>
                 </h1>
                 <input
                     type="text"
                     value={props.data.name}
                     onChange={props.handler}
-                    placeholder="First name"
+                    placeholder="Ad"
                     id="name"
                 />
                 <input
                     type="text"
                     value={props.data.lastName}
                     onChange={props.handler}
-                    placeholder="Last name"
+                    placeholder="Soyad"
                     id="lastName"
                 />
                 <input
                     type="text"
                     value={props.data.born}
                     onChange={props.handler}
-                    placeholder="Date of birth"
+                    placeholder="Doğum tarihi"
                     id="born"
                 />
                 <input
                     type="text"
                     value={props.data.place}
                     onChange={props.handler}
-                    placeholder="Place of birth"
+                    placeholder="Doğum yeri"
                     id="place"
                 />
                 <input
                     type="text"
                     value={props.data.sex}
                     onChange={props.handler}
-                    placeholder="Sex"
+                    placeholder="Cinsiyet"
                     id="sex"
                 />
                 <input
                     type="text"
                     value={props.data.marital}
                     onChange={props.handler}
-                    placeholder="Marital status"
+                    placeholder="Medeni hal"
                     id="marital"
                 />
                 <input
                     type="text"
                     value={props.data.drive}
                     onChange={props.handler}
-                    placeholder="Driving licence"
+                    placeholder="Sürücü ehliyeti"
                     id="drive"
                 />
                 <input
                     type="text"
                     value={props.data.military}
                     onChange={props.handler}
-                    placeholder="Military service"
+                    placeholder="Askerlik hizmeti"
                     id="military"
                 />
                 <input
                     type="text"
                     value={props.data.title}
                     onChange={props.handler}
-                    placeholder="Title"
+                    placeholder="Meslek"
                     id="title"
                 />
                 <input
                     type="text"
                     value={props.data.adress}
                     onChange={props.handler}
-                    placeholder="Adress"
+                    placeholder="Adres"
                     id="adress"
                 />
                 <input
                     type="text"
                     value={props.data.phone}
                     onChange={props.handler}
-                    placeholder="Phone number"
+                    placeholder="Telefon numarası"
                     id="phone"
                 />
                 <input
@@ -95,14 +95,14 @@ const General = (props) => {
                     type="text"
                     value={props.data.web}
                     onChange={props.handler}
-                    placeholder="Web site"
+                    placeholder="Web sayfası"
                     id="web"
                 />
                 <input
                     type="text"
                     value={props.data.desc}
                     onChange={props.handler}
-                    placeholder="Description"
+                    placeholder="Hakkında"
                     id="desc"
                 />
             </form>
