@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import jsPDF from "jspdf";
 import Form from "./c-form";
 import Preview from "./c-preview";
 import mocha from "../assets/mocha.jpg";
@@ -210,6 +211,16 @@ const Main = () => {
         setImage(mocha);
     };
 
+    const generatePDF = () => {
+        import("html2canvas").then((html2canvas) => {
+            html2canvas.default(document.querySelector(".fixed")).then((canvas) => {
+                let pdf = new jsPDF();
+                pdf.addImage(canvas.toDataURL(), "JPEG", 0, 0, 210, 297);
+                pdf.save(`CV-${general.lastName}${general.name}.pdf`);
+            });
+        });
+    };
+
     return (
         <div className="container">
             <Form
@@ -245,6 +256,7 @@ const Main = () => {
                 isEduPlusClicked={isEduPlusClicked}
                 isExpPlusClicked={isExpPlusClicked}
                 autofill={fillExample}
+                generatePDF={generatePDF}
             />
         </div>
     );

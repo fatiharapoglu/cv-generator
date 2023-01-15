@@ -224,8 +224,11 @@ const Preview = (props) => {
                         </div>
                     </div>
                 </div>
-                <button className="btn" onClick={props.autofill}>
+                <button className="btn autofill" onClick={props.autofill}>
                     Autofill
+                </button>
+                <button className="btn pdf" onClick={props.generatePDF}>
+                    Save as PDF
                 </button>
             </div>
         </div>
