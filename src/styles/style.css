@@ -7,6 +7,7 @@
     --secondary: rgb(36 36 36);
     --third: rgb(166 166 166);
     --fourth: rgb(9 9 9);
+    --fifth: rgba(0, 0, 0, 0.2);
     --font-1: "Source Sans Pro", sans-serif;
     --font-2: "Marcellus SC", serif;
     --font-3: "Mulish", sans-serif;
@@ -50,6 +51,7 @@ body {
     cursor: pointer;
     transition: all 0.1s ease-in-out;
     color: var(--third);
+    background-color: var(--background-primary);
 }
 
 .btn:hover {
@@ -316,6 +318,7 @@ ol li {
     padding: 7px;
     margin: 7px;
     border: var(--border);
+    background-color: var(--fifth);
 }
 
 .flex-container:first-child {
