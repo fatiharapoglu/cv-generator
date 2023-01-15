@@ -2,21 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Tenor+Sans&display=swap");
 
 :root {
-    --background-primary: rgb(20 20 20);
+    --background-primary: rgb(18 18 18);
     --primary: rgb(255 255 255);
     --secondary: rgb(36 36 36);
     --third: rgb(166 166 166);
-    --fourth: black;
+    --fourth: rgb(9 9 9);
     --font-1: "Source Sans Pro", sans-serif;
     --font-2: "Marcellus SC", serif;
-    --font-3: "Tenor Sans", sans-serif;
+    --font-3: "Mulish", sans-serif;
     --font-4: "Roboto", sans-serif;
-    --font-5: "Mulish", sans-serif;
     --border: 1px dashed rgb(58, 58, 58);
-    --preview-color-1: rgb(34, 34, 34);
-    --preview-color-2: rgb(209, 209, 209);
-    --preview-color-3: rgb(71, 71, 71);
-    --preview-color-4: rgb(15, 15, 15);
+    --preview-color-1: rgb(149 155 168);
+    --preview-color-2: rgb(190 199 214);
+    --preview-color-3: rgb(65 74 89 / 15%);
+    --preview-color-4: rgb(20 28 41);
 }
 
 * {
@@ -39,7 +38,7 @@ a {
 body {
     min-height: 100vh;
     background-color: var(--background-primary);
-    color: var(--primary);
+    color: var(--fourth);
     font-family: var(--font-1);
     position: relative;
 }
@@ -50,12 +49,12 @@ body {
     padding: 10px;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
-    color: inherit;
+    color: var(--third);
 }
 
 .btn:hover {
     scale: 1.025;
-    color: var(--third);
+    color: var(--primary);
 }
 
 .container {
@@ -89,10 +88,16 @@ body {
 
 .preview-experience-position {
     font-weight: bold;
+    padding-bottom: 3px;
 }
 
 .preview-education-position {
     font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.preview-education-degree {
+    font-weight: 200;
 }
 
 .left-preview {
@@ -108,7 +113,7 @@ body {
     flex: 2.5;
     height: 100%;
     background-color: var(--preview-color-2);
-    font-family: var(--font-5);
+    font-family: var(--font-3);
 }
 
 .preview-photo {
@@ -132,9 +137,12 @@ body {
 
 .left-preview h1 {
     margin: 10px 0 10px 0;
-    margin-left: -15px;
-    padding: 5px 0 4px 15px;
-    background-color: var(--fourth);
+    margin-left: -20px;
+    padding: 5px 0 4px 20px;
+    background-color: var(--preview-color-2);
+    font-family: var(--font-4);
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .left-preview li {
@@ -142,16 +150,16 @@ body {
 }
 
 .left-preview span {
-    font-weight: bold;
     font-family: var(--font-4);
+    color: var(--preview-color-4);
 }
 
 .preview-general {
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .preview-contact {
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .preview-hobbies li {
@@ -160,7 +168,7 @@ body {
 }
 
 .preview-hobbies {
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 ol li {
@@ -179,18 +187,17 @@ ol li {
 
 .preview-header {
     background-color: var(--preview-color-3);
-    padding: 20px;
+    padding: 40px 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 15%;
 }
 
 .header-name {
     text-align: center;
     font-size: 2rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-family: var(--font-2);
 }
 
@@ -209,6 +216,7 @@ ol li {
     letter-spacing: 10px;
     padding: 5px 0;
     border-bottom: var(--border);
+    color: var(--preview-color-4);
 }
 
 .preview-experience-1 {
@@ -236,7 +244,6 @@ ol li {
 }
 
 .preview-main {
-    color: var(--preview-color-4);
     padding: 20px 20px 0 20px;
     display: flex;
     flex-direction: column;
@@ -262,14 +269,14 @@ ol li {
     margin: 7px;
     display: flex;
     width: clamp(300px, 35vw, 585px);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 .form input:hover {
     letter-spacing: 2px;
     font-weight: bold;
-    background-color: white;
-    color: black;
+    background-color: var(--primary);
+    color: var(--fourth);
 }
 
 .flex-container {
@@ -295,6 +302,7 @@ ol li {
     letter-spacing: 3px;
     text-align: right;
     font-family: var(--font-3);
+    color: var(--third);
 }
 
 .footer {
@@ -307,6 +315,7 @@ ol li {
 .about {
     display: flex;
     align-items: center;
+    color: var(--primary);
 }
 
 .github-icon {
@@ -321,7 +330,7 @@ ol li {
 }
 
 .footer a {
-    color: var(--secondary);
+    color: var(--third);
 }
 
 .footer a:hover {

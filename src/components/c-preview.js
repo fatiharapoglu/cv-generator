@@ -167,8 +167,10 @@ const Preview = (props) => {
                             <div className="preview-education-1">
                                 <div className="preview-education-position">
                                     {props.education.subject}
-                                    {props.education.degree !== "" &&
-                                        ` / ${props.education.degree}`}
+                                    <span className="preview-education-degree">
+                                        {props.education.degree !== "" &&
+                                            ` / ${props.education.degree}`}
+                                    </span>
                                 </div>
                                 <div className="preview-education-main">
                                     <div>
@@ -187,8 +189,10 @@ const Preview = (props) => {
                                 <div className="preview-education-2">
                                     <div className="preview-education-position">
                                         {props.educationPlus.subjectPlus}
-                                        {props.educationPlus.degreePlus !== "" &&
-                                            ` / ${props.educationPlus.degreePlus}`}
+                                        <span className="preview-education-degree">
+                                            {props.educationPlus.degreePlus !== "" &&
+                                                ` / ${props.educationPlus.degreePlus}`}
+                                        </span>
                                     </div>
                                     <div className="preview-education-main">
                                         <div>
