@@ -377,3 +377,19 @@ ol li {
 .footer a:hover {
     color: var(--primary);
 }
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #585858;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2b2b2b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bebebe;
+}
