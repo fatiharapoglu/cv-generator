@@ -2,21 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Tenor+Sans&display=swap");
 
 :root {
-    --background-primary: rgb(18 18 18);
-    --primary: rgb(255 255 255);
-    --secondary: rgb(36 36 36);
-    --third: rgb(166 166 166);
-    --fourth: rgb(9 9 9);
-    --fifth: rgba(0, 0, 0, 0.2);
+    --background-primary: #121212;
+    --primary: #e4e4e4;
+    --secondary: #242424;
+    --third: #a6a6a6;
+    --fourth: #ffffff;
+    --fifth: #00000033;
     --font-1: "Source Sans Pro", sans-serif;
     --font-2: "Marcellus SC", serif;
     --font-3: "Mulish", sans-serif;
     --font-4: "Roboto", sans-serif;
-    --border: 1px dashed rgb(58, 58, 58);
-    --preview-color-1: rgb(149 155 168);
-    --preview-color-2: rgb(190 199 214);
-    --preview-color-3: rgb(65 74 89 / 15%);
-    --preview-color-4: rgb(20 28 41);
+    --border: 1px dashed #343434;
+    --border-preview: 1px dashed #343434;
+    --preview-color-1: #151515;
+    --preview-color-2: #1b1d20;
+    --preview-color-3: #19191a;
+    --preview-color-4: #e4fefe;
 }
 
 * {
@@ -81,7 +82,7 @@ body {
 
 .preview .fixed {
     position: fixed;
-    border: var(--border);
+    border: var(--border-preview);
     width: 593px;
     aspect-ratio: 0.7;
     display: flex;
@@ -202,10 +203,18 @@ ol li {
     position: fixed;
     border: none;
     top: 0;
-    right: 0;
+    right: 25px;
     height: 30px;
     padding: 0 10px;
-    width: 100px;
+}
+
+.btn.theme {
+    position: fixed;
+    border: none;
+    top: 0;
+    right: 100px;
+    height: 30px;
+    padding: 0 10px;
 }
 
 .active {
@@ -247,7 +256,7 @@ ol li {
 .preview-main h1 {
     letter-spacing: 10px;
     padding: 5px 0;
-    border-bottom: var(--border);
+    border-bottom: var(--border-preview);
     color: var(--preview-color-4);
 }
 
@@ -308,7 +317,7 @@ ol li {
     letter-spacing: 2px;
     font-weight: bold;
     background-color: var(--primary);
-    color: var(--fourth);
+    color: var(--background-primary);
 }
 
 .flex-container {
