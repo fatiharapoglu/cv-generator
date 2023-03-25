@@ -5,6 +5,7 @@
     "keywords": [],
     "author": "Fatih Arapoğlu",
     "license": "MIT",
+    "homepage": "http://fatiharapoglu.github.io/cv-generator/",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
