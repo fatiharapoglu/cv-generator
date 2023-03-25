@@ -1,10 +1,9 @@
-import React from "react";
-import Education from "./c-education";
-import Experience from "./c-experience";
-import General from "./c-general";
-import Hobbies from "./c-hobbies";
-import Photo from "./c-photo";
-import Skills from "./c-skills";
+import Education from "./Education";
+import Experience from "./Experience";
+import General from "./General";
+import Hobbies from "./Hobbies";
+import Photo from "./Photo";
+import Skills from "./Skills";
 
 const Form = (props) => {
     return (

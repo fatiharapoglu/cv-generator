@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Skills = (props) => {
     const [counter, setCounter] = useState(1);
@@ -11,14 +11,14 @@ const Skills = (props) => {
         <div className="flex-container">
             <ul>
                 <h1>
-                    YETENEKLER <i className="fa-solid fa-screwdriver-wrench"></i>
+                    SKILLS <i className="fa-solid fa-screwdriver-wrench"></i>
                 </h1>
                 <li>
                     <input
                         type="text"
                         value={props.data["skill1"]}
                         onChange={props.handler}
-                        placeholder={"Yetenek #1"}
+                        placeholder={"Skill #1"}
                         id={"skill1"}
                     />
                 </li>
@@ -28,7 +28,7 @@ const Skills = (props) => {
                             type="text"
                             value={props.data["skill2"]}
                             onChange={props.handler}
-                            placeholder={"Yetenek #2"}
+                            placeholder={"Skill #2"}
                             id={"skill2"}
                         />
                     </li>
@@ -39,7 +39,7 @@ const Skills = (props) => {
                             type="text"
                             value={props.data["skill3"]}
                             onChange={props.handler}
-                            placeholder={"Yetenek #3"}
+                            placeholder={"Skill #3"}
                             id={"skill3"}
                         />
                     </li>
@@ -50,7 +50,7 @@ const Skills = (props) => {
                             type="text"
                             value={props.data["skill4"]}
                             onChange={props.handler}
-                            placeholder={"Yetenek #4"}
+                            placeholder={"Skill #4"}
                             id={"skill4"}
                         />
                     </li>
@@ -61,7 +61,7 @@ const Skills = (props) => {
                             type="text"
                             value={props.data["skill5"]}
                             onChange={props.handler}
-                            placeholder={"Yetenek #5"}
+                            placeholder={"Skill #5"}
                             id={"skill5"}
                         />
                     </li>
@@ -72,7 +72,7 @@ const Skills = (props) => {
                             type="text"
                             value={props.data["skill6"]}
                             onChange={props.handler}
-                            placeholder={"Yetenek #6"}
+                            placeholder={"Skill #6"}
                             id={"skill6"}
                         />
                     </li>
@@ -83,7 +83,7 @@ const Skills = (props) => {
                             type="text"
                             value={props.data["skill7"]}
                             onChange={props.handler}
-                            placeholder={"Yetenek #7"}
+                            placeholder={"Skill #7"}
                             id={"skill7"}
                         />
                     </li>
@@ -94,7 +94,7 @@ const Skills = (props) => {
                             type="text"
                             value={props.data["skill8"]}
                             onChange={props.handler}
-                            placeholder={"Yetenek #8"}
+                            placeholder={"Skill #8"}
                             id={"skill8"}
                         />
                     </li>
@@ -102,7 +102,7 @@ const Skills = (props) => {
             </ul>
             {!(counter > 7) && (
                 <button onClick={addSkill} className="btn">
-                    <i className="fa-solid fa-plus"></i> Yeni Yetenek Ekle
+                    <i className="fa-solid fa-plus"></i> Add New Skill
                 </button>
             )}
         </div>

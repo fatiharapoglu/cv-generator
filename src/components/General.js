@@ -1,5 +1,3 @@
-import React from "react";
-
 const General = (props) => {
     return (
         <div className="flex-container">

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const Hobbies = (props) => {
+const Skills = (props) => {
     const [counter, setCounter] = useState(1);
 
-    const addHobby = () => {
+    const addSkill = () => {
         setCounter(counter + 1);
     };
 
@@ -11,25 +11,25 @@ const Hobbies = (props) => {
         <div className="flex-container">
             <ul>
                 <h1>
-                    HOBBIES <i className="fa-solid fa-icons"></i>
+                    YETENEKLER <i className="fa-solid fa-screwdriver-wrench"></i>
                 </h1>
                 <li>
                     <input
                         type="text"
-                        value={props.data["hobby1"]}
+                        value={props.data["skill1"]}
                         onChange={props.handler}
-                        placeholder={"Hobby #1"}
-                        id={"hobby1"}
+                        placeholder={"Yetenek #1"}
+                        id={"skill1"}
                     />
                 </li>
                 {counter > 1 && (
                     <li>
                         <input
                             type="text"
-                            value={props.data["hobby2"]}
+                            value={props.data["skill2"]}
                             onChange={props.handler}
-                            placeholder={"Hobby #2"}
-                            id={"hobby2"}
+                            placeholder={"Yetenek #2"}
+                            id={"skill2"}
                         />
                     </li>
                 )}
@@ -37,10 +37,10 @@ const Hobbies = (props) => {
                     <li>
                         <input
                             type="text"
-                            value={props.data["hobby3"]}
+                            value={props.data["skill3"]}
                             onChange={props.handler}
-                            placeholder={"Hobby #3"}
-                            id={"hobby3"}
+                            placeholder={"Yetenek #3"}
+                            id={"skill3"}
                         />
                     </li>
                 )}
@@ -48,10 +48,10 @@ const Hobbies = (props) => {
                     <li>
                         <input
                             type="text"
-                            value={props.data["hobby4"]}
+                            value={props.data["skill4"]}
                             onChange={props.handler}
-                            placeholder={"Hobby #4"}
-                            id={"hobby4"}
+                            placeholder={"Yetenek #4"}
+                            id={"skill4"}
                         />
                     </li>
                 )}
@@ -59,10 +59,10 @@ const Hobbies = (props) => {
                     <li>
                         <input
                             type="text"
-                            value={props.data["hobby5"]}
+                            value={props.data["skill5"]}
                             onChange={props.handler}
-                            placeholder={"Hobby #5"}
-                            id={"hobby5"}
+                            placeholder={"Yetenek #5"}
+                            id={"skill5"}
                         />
                     </li>
                 )}
@@ -70,10 +70,10 @@ const Hobbies = (props) => {
                     <li>
                         <input
                             type="text"
-                            value={props.data["hobby6"]}
+                            value={props.data["skill6"]}
                             onChange={props.handler}
-                            placeholder={"Hobby #6"}
-                            id={"hobby6"}
+                            placeholder={"Yetenek #6"}
+                            id={"skill6"}
                         />
                     </li>
                 )}
@@ -81,10 +81,10 @@ const Hobbies = (props) => {
                     <li>
                         <input
                             type="text"
-                            value={props.data["hobby7"]}
+                            value={props.data["skill7"]}
                             onChange={props.handler}
-                            placeholder={"Hobby #7"}
-                            id={"hobby7"}
+                            placeholder={"Yetenek #7"}
+                            id={"skill7"}
                         />
                     </li>
                 )}
@@ -92,21 +92,21 @@ const Hobbies = (props) => {
                     <li>
                         <input
                             type="text"
-                            value={props.data["hobby8"]}
+                            value={props.data["skill8"]}
                             onChange={props.handler}
-                            placeholder={"Hobby #8"}
-                            id={"hobby8"}
+                            placeholder={"Yetenek #8"}
+                            id={"skill8"}
                         />
                     </li>
                 )}
             </ul>
             {!(counter > 7) && (
-                <button onClick={addHobby} className="btn">
-                    <i className="fa-solid fa-plus"></i> Add New Hobby
+                <button onClick={addSkill} className="btn">
+                    <i className="fa-solid fa-plus"></i> Yeni Yetenek Ekle
                 </button>
             )}
         </div>
     );
 };
 
-export default Hobbies;
+export default Skills;

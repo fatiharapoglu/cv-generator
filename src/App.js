@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import MainTR from "./components-TR/m-main";
-import Footer from "./components/m-footer";
-import Main from "./components/m-main";
+import { useState } from "react";
+
+import Footer from "./components/Footer";
+import MainTR from "./components-TR/Main";
+import Main from "./components/Main";
 
 function App() {
     const [currentLanguage, setCurrentLanguage] = useState("EN");

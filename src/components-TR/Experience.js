@@ -1,44 +1,42 @@
-import React from "react";
-
 const Experience = (props) => {
     const plusHtml = (
         <>
             <h1>
-                EXPERIENCE #2 <i className="fa-solid fa-briefcase"></i>
+                DENEYİM #2 <i className="fa-solid fa-briefcase"></i>
             </h1>
             <input
                 type="text"
                 value={props.dataPlus.positionPlus}
                 onChange={props.handlerPlus}
-                placeholder="Position"
+                placeholder="Pozisyon"
                 id="positionPlus"
             />
             <input
                 type="text"
                 value={props.dataPlus.companyPlus}
                 onChange={props.handlerPlus}
-                placeholder="Company"
+                placeholder="Şirket"
                 id="companyPlus"
             />
             <input
                 type="text"
                 value={props.dataPlus.expCityPlus}
                 onChange={props.handlerPlus}
-                placeholder="City"
+                placeholder="Şehir"
                 id="expCityPlus"
             />
             <input
                 type="text"
                 value={props.dataPlus.expFromDatePlus}
                 onChange={props.handlerPlus}
-                placeholder="From (Year)"
+                placeholder="Tarih başlangıcı (Yıl)"
                 id="expFromDatePlus"
             />
             <input
                 type="text"
                 value={props.dataPlus.expToDatePlus}
                 onChange={props.handlerPlus}
-                placeholder="To (Year)"
+                placeholder="Tarih bitişi (Yıl)"
                 id="expToDatePlus"
             />
         </>
@@ -48,49 +46,49 @@ const Experience = (props) => {
         <div className="flex-container">
             <form>
                 <h1>
-                    {props.isExpPlusClicked ? "EXPERIENCE #1" : "EXPERIENCE"}{" "}
+                    {props.isExpPlusClicked ? "DENEYİM #1" : "DENEYİM"}{" "}
                     <i className="fa-solid fa-briefcase"></i>
                 </h1>
                 <input
                     type="text"
                     value={props.data.position}
                     onChange={props.handler}
-                    placeholder="Position"
+                    placeholder="Pozisyon"
                     id="position"
                 />
                 <input
                     type="text"
                     value={props.data.company}
                     onChange={props.handler}
-                    placeholder="Company"
+                    placeholder="Şirket"
                     id="company"
                 />
                 <input
                     type="text"
                     value={props.data.expCity}
                     onChange={props.handler}
-                    placeholder="City"
+                    placeholder="Şehir"
                     id="expCity"
                 />
                 <input
                     type="text"
                     value={props.data.expFromDate}
                     onChange={props.handler}
-                    placeholder="From (Year)"
+                    placeholder="Tarih başlangıcı (Yıl)"
                     id="expFromDate"
                 />
                 <input
                     type="text"
                     value={props.data.expToDate}
                     onChange={props.handler}
-                    placeholder="To (Year)"
+                    placeholder="Tarih bitişi (Yıl)"
                     id="expToDate"
                 />
                 {props.isExpPlusClicked && plusHtml}
             </form>
             {!props.isExpPlusClicked && (
                 <button onClick={props.plusExperience} className="btn">
-                    <i className="fa-solid fa-plus"></i> Add New Experience
+                    <i className="fa-solid fa-plus"></i> Yeni Deneyim Ekle
                 </button>
             )}
         </div>

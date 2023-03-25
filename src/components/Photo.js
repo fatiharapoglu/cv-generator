@@ -1,6 +1,4 @@
-import React from "react";
-
-function Photo(props) {
+const Photo = (props) => {
     return (
         <div className="flex-container">
             <h1 className="form-photo">
@@ -9,6 +7,6 @@ function Photo(props) {
             <input type="file" onChange={props.handler} />
         </div>
     );
-}
+};
 
 export default Photo;

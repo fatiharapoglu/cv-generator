@@ -1,4 +1,3 @@
-import React from "react";
 import github from "../assets/GitHub-Mark-Light-120px-plus.png";
 
 const Footer = () => {
@@ -6,10 +5,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="about">
                 <span>
-                    <a
-                        href="https://www.theodinproject.com/lessons/node-path-javascript-cv-application"
-                        id="odin"
-                    >
+                    <a href="https://www.theodinproject.com/" id="odin">
                         The Odin Project{" "}
                     </a>
                     | fatiharapoglu

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Hobbies = (props) => {
     const [counter, setCounter] = useState(1);

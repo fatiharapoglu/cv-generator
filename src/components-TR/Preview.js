@@ -1,5 +1,3 @@
-import React from "react";
-
 const Preview = (props) => {
     return (
         <div className="preview">
@@ -13,45 +11,45 @@ const Preview = (props) => {
                     </div>
                     <div className="preview-general">
                         <ul>
-                            <h1>Personal Information</h1>
+                            <h1>Kişisel Bilgiler</h1>
                             {props.general.born !== "" && (
                                 <li>
-                                    <span>Date of Birth:</span>
+                                    <span>Doğum Tarihi:</span>
                                     <br />
                                     {props.general.born}
                                 </li>
                             )}
                             {props.general.place !== "" && (
                                 <li>
-                                    <span>Place of Birth:</span>
+                                    <span>Doğum Yeri:</span>
                                     <br />
                                     {props.general.place}
                                 </li>
                             )}
                             {props.general.sex !== "" && (
                                 <li>
-                                    <span>Sex:</span>
+                                    <span>Cinsiyet:</span>
                                     <br />
                                     {props.general.sex}
                                 </li>
                             )}
                             {props.general.marital !== "" && (
                                 <li>
-                                    <span>Marital Status:</span>
+                                    <span>Medeni Hali:</span>
                                     <br />
                                     {props.general.marital}
                                 </li>
                             )}
                             {props.general.drive !== "" && (
                                 <li>
-                                    <span>Driving Licence:</span>
+                                    <span>Sürücü Ehliyeti:</span>
                                     <br />
                                     {props.general.drive}
                                 </li>
                             )}
                             {props.general.military !== "" && (
                                 <li>
-                                    <span>Military Service:</span>
+                                    <span>Askerlik Hizmeti:</span>
                                     <br />
                                     {props.general.military}
                                 </li>
@@ -59,18 +57,18 @@ const Preview = (props) => {
                         </ul>
                     </div>
                     <div className="preview-contact">
-                        <h1>Contact Information</h1>
+                        <h1>Ulaşım Bilgileri</h1>
                         <ul>
                             {props.general.adress !== "" && (
                                 <li>
-                                    <span>Adress:</span>
+                                    <span>Adres:</span>
                                     <br />
                                     {props.general.adress}
                                 </li>
                             )}
                             {props.general.phone !== "" && (
                                 <li>
-                                    <span>Phone:</span>
+                                    <span>Telefon:</span>
                                     <br />
                                     {props.general.phone}
                                 </li>
@@ -84,7 +82,7 @@ const Preview = (props) => {
                             )}
                             {props.general.web !== "" && (
                                 <li>
-                                    <span>Web Site:</span>
+                                    <span>Web Sayfası:</span>
                                     <br />
                                     {props.general.web}
                                 </li>
@@ -92,7 +90,7 @@ const Preview = (props) => {
                         </ul>
                     </div>
                     <div className="preview-hobbies">
-                        {props.hobbies.hobby1 !== "" && <h1>Social Activities</h1>}
+                        {props.hobbies.hobby1 !== "" && <h1>Sosyal Aktiviteler</h1>}
                         <ol>
                             {props.hobbies.hobby1 !== "" && <li>{props.hobbies.hobby1}</li>}
                             {props.hobbies.hobby2 !== "" && <li>{props.hobbies.hobby2}</li>}
@@ -116,13 +114,13 @@ const Preview = (props) => {
                     </div>
                     <div className="preview-main">
                         <div>
-                            <h1>PROFILE</h1>
+                            <h1>PROFİL</h1>
                             {props.general.desc !== "" && (
                                 <li className="preview-description">{props.general.desc}</li>
                             )}
                         </div>
                         <div className="preview-experience">
-                            <h1>EXPERIENCE</h1>
+                            <h1>İŞ DENEYİMİ</h1>
                             <div className="preview-experience-1">
                                 <div className="preview-experience-position">
                                     {props.experience.position}
@@ -161,7 +159,7 @@ const Preview = (props) => {
                             )}
                         </div>
                         <div className="preview-education">
-                            <h1>EDUCATION</h1>
+                            <h1>EĞİTİM</h1>
                             <div className="preview-education-1">
                                 <div className="preview-education-position">
                                     {props.education.subject}
@@ -208,7 +206,7 @@ const Preview = (props) => {
                             )}
                         </div>
                         <div className="preview-skills">
-                            <h1>SKILLS</h1>
+                            <h1>YETENEKLER</h1>
                             <ol>
                                 {props.skills.skill1 !== "" && <li>{props.skills.skill1}</li>}
                                 {props.skills.skill2 !== "" && <li>{props.skills.skill2}</li>}
@@ -223,10 +221,10 @@ const Preview = (props) => {
                     </div>
                 </div>
                 <button className="btn autofill" onClick={props.autofill}>
-                    Autofill
+                    Örnek Doldur
                 </button>
                 <button className="btn pdf" onClick={props.generatePDF}>
-                    Save as PDF
+                    PDF Olarak Kaydet
                 </button>
             </div>
         </div>
