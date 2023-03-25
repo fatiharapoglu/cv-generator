@@ -18,6 +18,7 @@ Created with **React**.
 
 -   [jsPDF](https://github.com/parallax/jsPDF/) for generating PDFs
 -   [html2canvas](https://html2canvas.hertzen.com/) for taking screenshots of the page
+-   [FontAwesome](https://fontawesome.com/) Icons
 -   [Eslint](https://eslint.org/) for linting
 -   [Prettier](https://prettier.io/) for formatting
 
