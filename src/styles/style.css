@@ -206,6 +206,7 @@ ol li {
     right: 25px;
     height: 30px;
     padding: 0 10px;
+    background: inherit;
 }
 
 .btn.theme {
@@ -215,6 +216,7 @@ ol li {
     right: 100px;
     height: 30px;
     padding: 0 10px;
+    background: inherit;
 }
 
 .active {
@@ -392,4 +394,41 @@ ol li {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #bebebe;
+}
+
+@media (width <= 1250px) {
+    body {
+        min-width: 650px;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form {
+        width: auto;
+    }
+
+    .form input {
+        width: 450px;
+    }
+
+    .preview {
+        width: auto;
+        margin-bottom: 100px;
+    }
+
+    .preview .fixed {
+        position: static;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
 }

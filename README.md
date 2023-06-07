@@ -13,6 +13,7 @@ Created with **React**.
 -   Autofill button for filling examples for user to see how it looks.
 -   Avatar image upload support.
 -   Save the resume as PDF.
+-   Responsive design.
 
 ## Helper Dependencies
 
@@ -22,10 +23,16 @@ Created with **React**.
 -   [Eslint](https://eslint.org/) for linting
 -   [Prettier](https://prettier.io/) for formatting
 
-## Roadmap
-
--   Make design responsive.
-
 ## How It Looks
 
 ![ss](./src/assets/readme.png)
+
+## Contact
+
+⮕ [LinkedIn](https://www.linkedin.com/in/fatiharapoglu/)
+
+⮕ [Portfolio](https://fatiharapoglu.dev)
+
+## License
+
+Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License.
